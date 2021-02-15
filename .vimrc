@@ -36,6 +36,8 @@ set history=500
 " Show line number
 set number
 
+" no highlighting in search
+set nohlsearch
 
 " remap the esc 
 inoremap jk <ESC>
@@ -392,6 +394,4 @@ endfunction
 highlight LineNr term=bold cterm=NONE ctermfg=Grey ctermbg=None gui=NONE guifg=DarkGrey guibg=NONE
 
 hi Search cterm=NONE ctermfg=DarkGrey ctermbg=blue
-
-
 
