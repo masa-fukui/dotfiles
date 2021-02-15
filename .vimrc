@@ -389,5 +389,9 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight LineNr term=bold cterm=NONE ctermfg=Grey ctermbg=None gui=NONE guifg=DarkGrey guibg=NONE
+
+hi Search cterm=NONE ctermfg=DarkGrey ctermbg=blue
+
+
 
