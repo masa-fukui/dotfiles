@@ -2,7 +2,10 @@ add_newline = true
 
 [character]
 success_symbol = "[➤](bold green)"
-error_symbol = "[➜](bold red) "
+error_symbol = "[𝑵𝑶𝑷𝑬](bold red) "
 
 [gcloud]
+disabled = true
+
+[aws]
 disabled = true
