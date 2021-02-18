@@ -5,3 +5,5 @@ A collection of my personal dotfiles and config files.
 - .vimrc
 - brew_install.sh
 - .tmux.conf
+- init.vim
+- starship.toml
