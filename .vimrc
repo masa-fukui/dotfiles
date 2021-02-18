@@ -398,3 +398,8 @@ set showcmd
 
 set cursorline
 
+
+
+packadd! dracula
+syntax enable
+colorscheme dracula
