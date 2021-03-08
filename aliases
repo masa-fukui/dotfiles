@@ -1,0 +1,4 @@
+alias test="echo TESTING..."
+alias el="exa -l"
+alias et="exa -T"
+alias elt="exa -lT"
