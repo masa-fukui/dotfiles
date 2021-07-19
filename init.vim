@@ -25,6 +25,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'jiangmiao/auto-pairs'
   Plug 'scrooloose/nerdtree'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'morhetz/gruvbox'
 call plug#end()
 "Config End
 
@@ -35,9 +36,11 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+autocmd vimenter * ++nested colorscheme gruvbox
+
 " set theme to dracula
 syntax enable
-colorscheme dracula
+" colorscheme dracula
 
 " swap esc key with jk  
 inoremap jk <ESC>
