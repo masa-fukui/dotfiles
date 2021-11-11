@@ -31,6 +31,6 @@ eval /Users/masa/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 
 ### Functions AKA Aliases ###
 function el
-    exa -l
+    exa -l --icons
 end
 
