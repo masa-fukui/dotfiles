@@ -18,4 +18,5 @@ brew install htop
 brew install jq
 brew install ripgrep
 brew install fd
+brew install delta
 brew install fzf
