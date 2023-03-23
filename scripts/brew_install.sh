@@ -1,13 +1,21 @@
-#!/usr/bin/bash
+#!/bin/bash
 
+echo "1.installing Homebrew"
+
+if command -v brew >/dev/null 2>&1 ; then
+  echo "Homebrew is installed, skipping."
+else
+  echo "Installing Homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+echo "2.downloading CLI essentials"
 # CL essentials
-brew install tldr
 brew install tree
 brew install bat
 brew install exa
 brew install htop
-brew install git
-
-# others
-brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
+brew install jq
+brew install ripgrep
+brew install fd
+brew install fzf
