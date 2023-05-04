@@ -9,3 +9,5 @@ disabled = true
 
 [aws]
 disabled = true
+[ruby]
+disabled = true

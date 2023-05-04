@@ -2,6 +2,6 @@
 
 for cmd in diff log tag branch; do
     git config pager.$cmd true
-    echo "Disabled pager for: $cmd"
+    echo "Enabled pager for: $cmd"
 done
 
