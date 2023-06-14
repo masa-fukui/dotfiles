@@ -8,3 +8,4 @@ A collection of my personal dotfiles and config files.
 - init.vim
 - starship.toml
 - personal scripts
+- .gitconfig
