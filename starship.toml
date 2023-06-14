@@ -1,13 +1,14 @@
 add_newline = true
 
 [character]
-success_symbol = "[➤](bold green)"
-error_symbol = "[x](bold red) "
+success_symbol = '[\$](bold green)'
+error_symbol = '[\$](bold red)'
 
 [gcloud]
 disabled = true
 
 [aws]
 disabled = true
+
 [ruby]
 disabled = true

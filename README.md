@@ -7,3 +7,4 @@ A collection of my personal dotfiles and config files.
 - .tmux.conf
 - init.vim
 - starship.toml
+- personal scripts

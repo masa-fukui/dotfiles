@@ -7,10 +7,11 @@ brew "jq"
 brew "exa"
 brew "fd"
 brew "fzf"
-brew "delta"
+brew "git-delta"
 brew "ripgrep"
 brew "starship"
 brew "terraform"
+brew "gum"
 
 tap "homebrew/cask"
 
