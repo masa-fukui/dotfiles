@@ -1,28 +1,13 @@
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-
-[user]
-	name = Masa Mark Fukui
-	email = masahiro.m.fukui@gmail.com
-
-[pull]
-	ff = only
-
-[core]
-	excludesfile = /Users/masa/.gitignore_global
-    pager = delta
 
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [delta]
-side-by-side = true 
-line-numbers = true
-navigate = true
-light = false
+	side-by-side = true 
+	line-numbers = true
+	navigate = true
+	light = false
 
 [alias]
     lp = log -p
@@ -31,3 +16,9 @@ light = false
     ri = rebase -i
     st = status
     cm = commit -m
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 

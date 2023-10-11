@@ -11,6 +11,7 @@ set autoindent              " indent a new line the same amount as the line just
 set number                  " add line numbers
 set clipboard=unnamed       " yank to clipboard
 set noshowmode
+set relativenumber
 
 filetype plugin indent on   " allows auto-indenting depending on file type
 syntax on                   " syntax highlighting
