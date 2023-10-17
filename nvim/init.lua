@@ -4,6 +4,13 @@ require("main.packer")
 -- Set the color scheme to Rose Pine
 vim.cmd("colorscheme everforest")
 
+-- Line number colors
+function LineNumberColors()
+    vim.api.nvim_set_hl(0, 'LineNrAbove', { fg='#878787', bold=false })
+    vim.api.nvim_set_hl(0, 'LineNr', { fg='#bababa', bold=false })
+    vim.api.nvim_set_hl(0, 'LineNrBelow', { fg='#878787', bold=false })
+end
+
 -- Geenral settings
 vim.cmd("set number")
 vim.cmd("set relativenumber")
@@ -19,3 +26,4 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 
+LineNumberColors()
