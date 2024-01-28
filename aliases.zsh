@@ -13,3 +13,4 @@ alias c=clear
 alias wrename='tmux rename-window'
 alias ktl=kubectl
 alias gowork='~/go/src/github.com/Masamerc/'
+alias k=kubectl

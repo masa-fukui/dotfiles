@@ -1,4 +1,8 @@
 [filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 
 [interactive]
 	diffFilter = delta --color-only
@@ -22,3 +26,8 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+[user]
+	email = masahiro.m.fukui@gmail.com
+	name = Masamerc
+[core]
+	hookspath = .githooks

@@ -4,7 +4,7 @@ function take {
 }
 
 function osync {
-    cd ~/Documents/obsidian-vault
-    git add . && git commit -m "Sync: from Obsidian"
+    git add . && git commit -m "obsidian update: $(date)"
     git push -u origin HEAD
 }
+
