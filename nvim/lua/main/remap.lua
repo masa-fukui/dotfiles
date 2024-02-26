@@ -11,4 +11,6 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 
 -- nvimtree toggle
-vim.keymap.set('n', '<leader>pe', vim.cmd.NvimTreeToggle)
+vim.keymap.set('n', '<leader>e', vim.cmd.NvimTreeToggle)
+vim.keymap.set('n', '<leader>h', ':wincmd h<CR>', {silent = true, noremap = true})
+vim.keymap.set('n', '<leader>l', ':wincmd l<CR>', {silent = true, noremap = true})
