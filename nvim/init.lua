@@ -35,4 +35,5 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
 )
 vim.api.nvim_buf_set_keymap(0, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true, silent = true})
 
+require('lualine').setup()
 LineNumberColors()
