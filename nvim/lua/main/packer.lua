@@ -64,10 +64,28 @@ return require('packer').startup(function(use)
     end
   }
 
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
+    -- install git related plugins
+    use {
+        'lewis6991/gitsigns.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        }
+    }
+
+    use {
+        'akinsho/nvim-bufferline.lua',
+        requires = 'kyazdani42/nvim-web-devicons'   
+    }
+
+    -- vim fugitive
+    use {
+        'tpope/vim-fugitive'
+    }
 
 end)
 
