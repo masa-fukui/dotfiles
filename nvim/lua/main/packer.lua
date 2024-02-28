@@ -91,6 +91,7 @@ return require("packer").startup(function(use)
 	})
 
 	use({ "ellisonleao/gruvbox.nvim" })
+    use({"sainnhe/gruvbox-material"})
 	-- Lua
 	use({
 		"folke/which-key.nvim",
@@ -104,4 +105,9 @@ return require("packer").startup(function(use)
 			})
 		end,
 	})
+
+    use({ "rebelot/kanagawa.nvim" })
+    use({ "savq/melange-nvim" })
+    use { 'embark-theme/vim', as = 'embark' }
+
 end)
