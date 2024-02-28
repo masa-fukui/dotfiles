@@ -1,7 +1,8 @@
 require("main.remap")
 require("main.packer")
 
--- Set the color scheme to Rose Pine
+-- set the colorscheme
+-- vim.cmd("colorscheme gruvbox")
 vim.cmd("colorscheme everforest")
 
 -- Line number colors
