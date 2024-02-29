@@ -106,7 +106,6 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-    use({ "rebelot/kanagawa.nvim" })
     use({ "savq/melange-nvim" })
     use { 'embark-theme/vim', as = 'embark' }
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
