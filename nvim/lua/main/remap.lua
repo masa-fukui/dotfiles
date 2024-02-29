@@ -12,3 +12,9 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", { silent = true, noremap = true })
+--
+-- Bind Shift+H to :bprev
+vim.api.nvim_set_keymap('n', 'H', ':bprev<CR>', { noremap = true, silent = true })
+
+-- Bind Shift+L to :bnext
+vim.api.nvim_set_keymap('n', 'L', ':bnext<CR>', { noremap = true, silent = true })
