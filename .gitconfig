@@ -20,6 +20,7 @@
     ri = rebase -i
     st = status
     cm = commit -m
+    w = worktree
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -31,3 +32,4 @@
 	name = Masamerc
 [core]
 	hookspath = .githooks
+    excludesfile = ~/.gitignore_global

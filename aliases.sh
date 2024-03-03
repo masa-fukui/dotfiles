@@ -8,3 +8,15 @@ function osync {
     git push -u origin HEAD
 }
 
+function gwa {
+    if [ "$#" -ne 2 ]; then
+        echo "Usage: gwa <feature type> <branch name>"
+        return
+    fi
+
+    local feature_type=$1
+    local branch_name=$2
+
+    git worktree add -b $feature_type/$branch_name .worktrees/$feature_type/$branch_name
+
+}
