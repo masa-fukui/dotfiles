@@ -109,4 +109,6 @@ return require("packer").startup(function(use)
 	use({ "savq/melange-nvim" })
 	use({ "embark-theme/vim", as = "embark" })
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+    use({"ThePrimeagen/git-worktree.nvim"})
+
 end)
