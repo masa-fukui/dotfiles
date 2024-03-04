@@ -1,3 +1,4 @@
+# shell functions
 function take {
     mkdir -p $1
     cd $1
@@ -20,3 +21,21 @@ function gwa {
     git worktree add -b $feature_type/$branch_name .worktrees/$feature_type/$branch_name
 
 }
+
+# alias 
+alias e=exa
+alias el="exa -l"
+alias ll="exa -l"
+alias et="exa -T"
+alias elt="exa -lT"
+
+alias rustbook='open -a "Google Chrome" ~/workspace/book/book/index.html'
+alias gcommit='~/dotfiles/scripts/gum/better_commit.sh'
+alias gswitch='~/dotfiles/scripts/gum/better_switch.sh'
+
+alias c=clear
+
+alias wrename='tmux rename-window'
+alias ktl=kubectl
+alias gowork='~/go/src/github.com/Masamerc/'
+alias k=kubectl
