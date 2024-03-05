@@ -1,12 +1,12 @@
 require("main.remap")
 require("main.packer")
 
+-- theme swticher
+local workenv = os.getenv("WORK_ENV")
+
 -- vim.cmd("colorscheme everforest")
 -- vim.cmd("colorscheme kanagawa")
 -- vim.cmd("colorscheme embark")
-
--- theme swticher
-local workenv = os.getenv("WORK_ENV")
 
 if workenv == "work" then
     vim.cmd("colorscheme catppuccin-mocha")
