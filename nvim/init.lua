@@ -1,13 +1,19 @@
 require("main.remap")
 require("main.packer")
 
--- set the colorscheme
--- vim.cmd("colorscheme gruvbox")
 -- vim.cmd("colorscheme everforest")
 -- vim.cmd("colorscheme gruvbox-material")
 -- vim.cmd("colorscheme kanagawa")
 -- vim.cmd("colorscheme embark")
-vim.cmd("colorscheme catppuccin-mocha")
+
+-- theme swticher
+local workenv = os.getenv("WORK_ENV")
+
+if workenv == "work" then
+    vim.cmd("colorscheme catppuccin-mocha")
+else
+    vim.cmd("colorscheme gruvbox-material")
+end
 
 -- Line number colors
 function LineNumberColors()

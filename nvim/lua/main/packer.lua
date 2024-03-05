@@ -92,7 +92,6 @@ return require("packer").startup(function(use)
 
     use({"tpope/vim-commentary"})
 
-	use({ "ellisonleao/gruvbox.nvim" })
 	use({ "sainnhe/gruvbox-material" })
 	-- Lua
 	use({
