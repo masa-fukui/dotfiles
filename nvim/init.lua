@@ -2,7 +2,6 @@ require("main.remap")
 require("main.packer")
 
 -- vim.cmd("colorscheme everforest")
--- vim.cmd("colorscheme gruvbox-material")
 -- vim.cmd("colorscheme kanagawa")
 -- vim.cmd("colorscheme embark")
 
