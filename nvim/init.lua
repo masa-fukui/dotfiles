@@ -4,9 +4,10 @@ require("main.packer")
 -- set the colorscheme
 -- vim.cmd("colorscheme gruvbox")
 -- vim.cmd("colorscheme everforest")
-vim.cmd("colorscheme gruvbox-material")
+-- vim.cmd("colorscheme gruvbox-material")
 -- vim.cmd("colorscheme kanagawa")
 -- vim.cmd("colorscheme embark")
+vim.cmd("colorscheme catppuccin-mocha")
 
 -- Line number colors
 function LineNumberColors()

@@ -22,6 +22,10 @@ function gwa {
 
 }
 
+function newsess {
+    tmux new -s $1 -d
+}
+
 # alias 
 alias e=exa
 alias el="exa -l"
