@@ -113,4 +113,27 @@ return require("packer").startup(function(use)
     use({"ThePrimeagen/git-worktree.nvim"})
 
     use { "catppuccin/nvim", as = "catppuccin" }
+
+    use({
+      "epwalsh/obsidian.nvim",
+      tag = "*",  -- recommended, use latest release instead of latest commit
+      requires = {
+        -- Required.
+        "nvim-lua/plenary.nvim",
+
+      },
+      config = function()
+        require("obsidian").setup({
+          workspaces = {
+            {
+              name = "personal",
+              path = "~/Documents/obsidian-vault",
+            },
+          },
+
+        })
+      end,
+    })
+
+
 end)

@@ -4,6 +4,10 @@ vim.g.mapleader = " "
 -- file explore on key press: space + pv
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Stay in indent mode
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
+
 -- remap jk to esc
 -- vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("v", "jk", "<Esc>", { noremap = true, silent = true })
@@ -18,3 +22,11 @@ vim.api.nvim_set_keymap("n", "H", ":bprev<CR>", { noremap = true, silent = true 
 
 -- Bind Shift+L to :bnext
 vim.api.nvim_set_keymap("n", "L", ":bnext<CR>", { noremap = true, silent = true })
+
+-- Obsidian
+vim.keymap.set("n", "<leader>oo", "<cmd>ObsidianOpen<CR>", { desc = "Open in Obsidian App" })
+vim.keymap.set("n", "<leader>ob", "<cmd>ObsidianBacklinks<CR>", { desc = "Show ObsidianBacklinks" })
+vim.keymap.set("n", "<leader>ol", "<cmd>ObsidianLinks<CR>", { desc = "Show ObsidianLinks" })
+vim.keymap.set("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "Create New Note" })
+vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<CR>", { desc = "Search Obsidian" })
+vim.keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "Quick Switch" })
