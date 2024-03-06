@@ -29,6 +29,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.cmd("set clipboard=unnamedplus")
 
 -- Editor options
+vim.opt.termguicolors = true
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -41,15 +42,5 @@ vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	-- width = 100,
 })
 vim.api.nvim_buf_set_keymap(0, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
-
--- init plugins
-vim.opt.termguicolors = true
-require("lualine").setup()
-require("gitsigns").setup()
-
--- git worktree
-require("git-worktree").setup()
-require("telescope").load_extension("git_worktree")
-vim.keymap.set("n", "<leader>gw", ":lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", silent)
 
 LineNumberColors()

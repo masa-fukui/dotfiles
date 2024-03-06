@@ -1,7 +1,7 @@
--- set leader key
+-- Set leader key
 vim.g.mapleader = " "
 
--- file explore on key press: space + pv
+-- File explore on key press: space + pv
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Stay in indent mode
@@ -16,7 +16,7 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", { silent = true, noremap = true })
---
+
 -- Bind Shift+H to :bprev
 vim.api.nvim_set_keymap("n", "H", ":bprev<CR>", { noremap = true, silent = true })
 
@@ -33,3 +33,6 @@ vim.keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "Quic
 
 -- Lazigit
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Toggle lazygit" })
+
+-- Git worktree
+vim.keymap.set("n", "<leader>gw", ":lua require('telescope').extensions.git_worktree.git_worktrees()<CR>", silent)
