@@ -9,9 +9,9 @@ local workenv = os.getenv("WORK_ENV")
 -- vim.cmd("colorscheme embark")
 
 if workenv == "work" then
-    vim.cmd("colorscheme catppuccin-mocha")
+	vim.cmd("colorscheme catppuccin-mocha")
 else
-    vim.cmd("colorscheme gruvbox-material")
+	vim.cmd("colorscheme gruvbox-material")
 end
 
 -- Line number colors

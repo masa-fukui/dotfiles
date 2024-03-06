@@ -90,7 +90,7 @@ return require("packer").startup(function(use)
 		"tpope/vim-fugitive",
 	})
 
-    use({"tpope/vim-commentary"})
+	use({ "tpope/vim-commentary" })
 
 	use({ "sainnhe/gruvbox-material" })
 	-- Lua
@@ -110,30 +110,44 @@ return require("packer").startup(function(use)
 	use({ "savq/melange-nvim" })
 	use({ "embark-theme/vim", as = "embark" })
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
-    use({"ThePrimeagen/git-worktree.nvim"})
+	use({ "ThePrimeagen/git-worktree.nvim" })
 
-    use { "catppuccin/nvim", as = "catppuccin" }
+	use({ "catppuccin/nvim", as = "catppuccin" })
+
+	use({
+		"epwalsh/obsidian.nvim",
+		tag = "*", -- recommended, use latest release instead of latest commit
+		requires = {
+			-- Required.
+			"nvim-lua/plenary.nvim",
+		},
+	})
+
+	use({
+		"startup-nvim/startup.nvim",
+		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	})
+
+	use({
+		"folke/noice.nvim",
+		requires = {
+			{ "MunifTanjim/nui.nvim" },
+			{
+				"rcarriga/nvim-notify",
+				module = { "notify" },
+				config = function()
+					require("notify").setup({})
+				end,
+			},
+		},
+	})
 
     use({
-      "epwalsh/obsidian.nvim",
-      tag = "*",  -- recommended, use latest release instead of latest commit
-      requires = {
-        -- Required.
-        "nvim-lua/plenary.nvim",
-
-      },
-      config = function()
-        require("obsidian").setup({
-          workspaces = {
-            {
-              name = "personal",
-              path = "~/Documents/obsidian-vault",
-            },
-          },
-
-        })
-      end,
+        "kdheepak/lazygit.nvim",
+        requires = {
+            "nvim-telescope/telescope.nvim",
+            "nvim-lua/plenary.nvim",
+        },
     })
-
 
 end)
