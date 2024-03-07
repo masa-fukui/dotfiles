@@ -9,6 +9,7 @@ config.enable_scroll_bar = false
 config.color_scheme = 'Catppuccin Mocha'
 config.font = wezterm.font('JetBrainsMono Nerd Font', {weight='Regular', stretch='Normal'})
 config.font_size = 12.5
+config.window_decorations = 'RESIZE'
 
 -- keys
 local act = wezterm.action
