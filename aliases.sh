@@ -5,6 +5,7 @@ function take {
 }
 
 function osync {
+    cd ~/Documents/obsidian-vault
     git add . && git commit -m "obsidian update: $(date)"
     git push -u origin HEAD
 }
@@ -26,12 +27,12 @@ function newsess {
     tmux new -s $1 -d
 }
 
-# alias 
-alias e=exa
+# aliases 
 alias el="exa -l"
 alias ll="exa -l"
 alias et="exa -T"
 alias elt="exa -lT"
+alias ls="exa"
 
 alias rustbook='open -a "Google Chrome" ~/workspace/book/book/index.html'
 alias gcommit='~/dotfiles/scripts/gum/better_commit.sh'
@@ -47,3 +48,5 @@ alias k=kubectl
 alias lg=lazygit
 
 alias vim=nvim
+alias vi=nvim
+alias v=nvim
