@@ -45,3 +45,5 @@ alias gowork='~/go/src/github.com/Masamerc/'
 alias k=kubectl
 
 alias lg=lazygit
+
+alias vim=nvim
