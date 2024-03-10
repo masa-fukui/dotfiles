@@ -24,8 +24,6 @@ end
 -- Geenral settings
 vim.cmd("set number")
 vim.cmd("set relativenumber")
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.cmd("set clipboard=unnamedplus")
 
 -- Editor options

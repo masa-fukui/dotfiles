@@ -5,6 +5,8 @@ require("obsidian").setup({
 			path = "~/Documents/obsidian-vault",
 		},
 	},
+
+    open_app_foreground = true,
 })
 
 vim.opt.conceallevel = 2
