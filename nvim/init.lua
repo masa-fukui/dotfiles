@@ -36,8 +36,6 @@ vim.opt.signcolumn = "yes"
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 	border = "single", -- "shadow" , "none", "rounded"
-	-- border = border
-	-- width = 100,
 })
 vim.api.nvim_buf_set_keymap(0, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
 
