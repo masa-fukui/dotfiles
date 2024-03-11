@@ -30,6 +30,9 @@ require("lspconfig").gopls.setup({
     },
 })
 require("lspconfig").pyright.setup({})
+require("lspconfig").lua_ls.setup({})
+require("lspconfig").terraformls.setup({})
+require("lspconfig").tflint.setup({})
 
 local cmp = require("cmp")
 
