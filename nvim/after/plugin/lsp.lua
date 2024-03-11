@@ -13,6 +13,8 @@ require("mason-lspconfig").setup({
 		"gopls",
 		"pyright",
         "lua_ls",
+        "terraformls",
+        "tflint",
 	},
 })
 require("lspconfig").rust_analyzer.setup({})
