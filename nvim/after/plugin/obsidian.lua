@@ -6,7 +6,7 @@ require("obsidian").setup({
 		},
 	},
 
-    open_app_foreground = true,
+	open_app_foreground = true,
 })
 
 vim.opt.conceallevel = 2

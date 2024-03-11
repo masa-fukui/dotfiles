@@ -5,7 +5,17 @@ require("startup").setup()
 require("telescope").load_extension("lazygit")
 
 -- lualine
-require("lualine").setup()
+require("lualine").setup({
+	sections = {
+		lualine_c = {
+			{
+				"filename",
+				file_status = true, -- displays file status (readonly status, modified status)
+				path = 1,
+			},
+		},
+	},
+})
 
 -- gitsigns
 require("gitsigns").setup()
