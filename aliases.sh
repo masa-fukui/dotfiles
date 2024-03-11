@@ -23,6 +23,10 @@ function gwa {
 
 }
 
+function gwm {
+    cd ../../..
+}
+
 function newsess {
     tmux new -s $1 -d
 }
