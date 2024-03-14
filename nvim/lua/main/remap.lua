@@ -4,6 +4,9 @@ vim.g.mapleader = " "
 -- File explore on key press: space + pv
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Use ; for cmd mode
+vim.keymap.set("n", ";", ":", { noremap = true })
+
 -- Stay in indent mode
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
