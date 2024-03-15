@@ -50,4 +50,12 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+-- set conceallevel = 0 for json files
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "json",
+    callback = function()
+        vim.opt_local.conceallevel = 0
+    end,
+})
+
 LineNumberColors()
