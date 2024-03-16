@@ -33,3 +33,13 @@ vim.keymap.set("n", "<leader>bd", "<cmd>Bdelete<CR>", { desc = "Close buffer" })
 
 -- rust vim
 vim.g.rustfmt_autosave = 1
+
+-- fterm
+require("Fterm").setup({
+    dimensions = {
+        height = 0.8,
+        width = 0.8,
+    },
+})
+vim.keymap.set("n", "<leader>tt", "<cmd>lua require('Fterm').toggle()<CR>", { desc = "Toggle Fterm" })
+
