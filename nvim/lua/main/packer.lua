@@ -174,4 +174,5 @@ return require("packer").startup(function(use)
         requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
     })
     use("rust-lang/rust.vim")
+    use("numToStr/Fterm.nvim")
 end)
