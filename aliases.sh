@@ -23,7 +23,7 @@ function gwa {
 
 }
 
-function gwm {
+function gwb {
     cd ../../..
 }
 
