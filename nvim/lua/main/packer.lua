@@ -168,4 +168,10 @@ return require("packer").startup(function(use)
     use('famiu/bufdelete.nvim')
 
     use('tpope/vim-surround')
+    -- null-ls
+    use({
+        "nvimtools/none-ls.nvim",
+        requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    })
+    use("rust-lang/rust.vim")
 end)
