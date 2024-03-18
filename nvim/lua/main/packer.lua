@@ -57,13 +57,6 @@ return require("packer").startup(function(use)
 		wants = "nvim-web-devicons",
 		config = function()
 			require("nvim-web-devicons").setup()
-
-			require("nvim-tree").setup({
-				hijack_cursor = true,
-				view = {
-					width = 40,
-				},
-			})
 		end,
 	})
 
