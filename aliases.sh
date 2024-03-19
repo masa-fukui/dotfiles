@@ -53,3 +53,5 @@ alias lg=lazygit
 alias vim=nvim
 alias vi=nvim
 alias v=nvim
+
+alias gcl="gcloud"
