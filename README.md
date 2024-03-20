@@ -2,10 +2,10 @@
 A collection of my personal dotfiles and config files.
 
 ## Keeping track of
-- .vimrc
-- brew_install.sh
+- neovim lua config
 - .tmux.conf
-- init.vim
 - starship.toml
+- wezterm lua config
 - personal scripts
-- .gitconfig
+- git related config
+- karabiner keybind rules
