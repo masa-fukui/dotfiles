@@ -15,6 +15,7 @@ require("mason-lspconfig").setup({
 		"lua_ls",
 		"terraformls",
 		"tflint",
+        "jsonls",
 	},
 })
 require("lspconfig").rust_analyzer.setup({})
@@ -33,6 +34,7 @@ require("lspconfig").pyright.setup({})
 require("lspconfig").lua_ls.setup({})
 require("lspconfig").terraformls.setup({})
 require("lspconfig").tflint.setup({})
+require("lspconfig").jsonls.setup({})
 
 local cmp = require("cmp")
 
