@@ -14,6 +14,7 @@ config.enable_scroll_bar = false
 
 -- appearance
 config.color_scheme = 'Catppuccin Mocha'
+-- config.color_scheme = 'Monokai Pro (Gogh)'
 config.font = wezterm.font('JetBrainsMono Nerd Font', {weight='Regular', stretch='Normal'})
 config.font_size = 13
 config.window_decorations = 'RESIZE'
