@@ -10,6 +10,9 @@ vim.keymap.set("v", ">", ">gv")
 -- remap jk to esc
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true, silent = true })
 
+-- remap E to move to the end of the line
+vim.api.nvim_set_keymap("n", "E", "$", { noremap = true, silent = true })
+
 -- move selected line / block of text in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
