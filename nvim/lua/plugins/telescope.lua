@@ -2,7 +2,7 @@ require("telescope").load_extension("git_worktree")
 require("telescope").load_extension("lazygit")
 
 -- enable telescope fzf native
-pcall(require('telescope').load_extension, 'fzf')
+pcall(require("telescope").load_extension, "fzf")
 
 require("telescope").setup()
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[F]ind [F]iles" })
