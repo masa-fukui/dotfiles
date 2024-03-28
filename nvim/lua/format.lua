@@ -2,7 +2,8 @@
 local workenv = os.getenv("WORK_ENV")
 
 if workenv == "work" then
-	vim.cmd("colorscheme catppuccin-mocha")
+	-- vim.cmd("colorscheme catppuccin-mocha")
+	vim.cmd("colorscheme kanagawa")
 else
 	vim.cmd("colorscheme gruvbox-material")
 end

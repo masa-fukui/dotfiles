@@ -24,6 +24,7 @@ local plugins = {
 		dependencies = "nvim-tree/nvim-web-devicons",
 	},
 	{ "catppuccin/nvim", name = "catppuccin" },
+	{ "rebelot/kanagawa.nvim", name = "rebelot" },
 	"nvim-lua/plenary.nvim",
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 
@@ -202,10 +203,10 @@ local plugins = {
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {},
 	},
-    {
-      "github/copilot.vim",
-      lazy=false,
-    },
+	{
+		"github/copilot.vim",
+		lazy = false,
+	},
 }
 
 local opts = {

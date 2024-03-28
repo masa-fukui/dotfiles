@@ -34,3 +34,8 @@ end, { desc = "Toggle trouble loclist" })
 vim.keymap.set("n", "<leader>xr", function()
 	require("trouble").toggle("lsp_references")
 end, { desc = "Toggle trouble lsp_ref" })
+
+-- kanagawa
+require("kanagawa").setup({
+	theme = "dragon",
+})
