@@ -207,6 +207,10 @@ local plugins = {
 		"github/copilot.vim",
 		lazy = false,
 	},
+	{
+		"christoomey/vim-tmux-navigator",
+        event = "VimEnter",
+	},
 }
 
 local opts = {

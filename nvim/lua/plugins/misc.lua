@@ -39,3 +39,9 @@ end, { desc = "Toggle trouble lsp_ref" })
 require("kanagawa").setup({
 	theme = "dragon",
 })
+
+
+vim.keymap.set("n", "<C-Left>", "<cmd>TmuxNavigateLeft<CR>", { desc = "TmuxNavigateLeft" })
+vim.keymap.set("n", "<C-Right>", "<cmd>TmuxNavigateRight<CR>", { desc = "TmuxNavigateRight" })
+vim.keymap.set("n", "<C-Up>", "<cmd>TmuxNavigateUp<CR>", { desc = "TmuxNavigateUp" })
+vim.keymap.set("n", "<C-Left>", "<cmd>TmuxNavigateLeft<CR>", { desc = "TmuxNavigateLeft" })
