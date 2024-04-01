@@ -26,3 +26,6 @@ vim.api.nvim_set_keymap("n", "H", ":bprev<cr>", { noremap = true, silent = true 
 
 -- bind shift+l to :bnext
 vim.api.nvim_set_keymap("n", "L", ":bnext<cr>", { noremap = true, silent = true })
+
+-- bind Ctrl+/ to clear search
+vim.api.nvim_set_keymap("n", "<C-_>", ":nohlsearch<CR>", { noremap = true, silent = true })
