@@ -211,6 +211,12 @@ local plugins = {
 		"christoomey/vim-tmux-navigator",
         event = "VimEnter",
 	},
+    {
+        "AckslD/nvim-neoclip.lua",
+        config = function()
+            require('neoclip').setup()
+        end,
+    }
 }
 
 local opts = {

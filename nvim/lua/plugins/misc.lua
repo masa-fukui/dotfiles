@@ -7,6 +7,9 @@ vim.keymap.set("n", "<leader>bd", "<cmd>Bdelete<CR>", { desc = "Close buffer" })
 -- rust vim: general
 vim.g.rustfmt_autosave = 1
 
+-- neoclip: remaps
+vim.keymap.set("n", "<leader>fn", "<cmd>Telescope neoclip<CR>", { desc = "neoclip" })
+
 -- Fterm: remaps
 vim.keymap.set("n", "<leader>tt", "<cmd>lua require('Fterm').toggle()<CR>", { desc = "Toggle Fterm" })
 vim.keymap.set("n", "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>')
