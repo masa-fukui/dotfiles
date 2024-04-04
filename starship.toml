@@ -9,7 +9,7 @@ error_symbol = '[\$](bold red)'
 disabled = true
 
 [aws]
-disabled = false
+disabled = true
 
 [ruby]
 disabled = true
