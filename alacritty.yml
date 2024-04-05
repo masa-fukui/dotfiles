@@ -2,6 +2,9 @@ live_config_reload: true
 
 startup_mode: Maximized
 
+window:
+    decorations: none
+
 font:
   normal:
     family: 'JetBrainsMono Nerd Font'
