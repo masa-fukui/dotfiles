@@ -1,11 +1,36 @@
+require("telescope").setup({
+	defaults = {
+		file_ignore_patterns = { ".git/", "node_modules/", "vendor/", ".cache/", },
+	},
+	extensions = {
+		fzf = {
+			fuzzy = true, -- false will only do exact matching
+			override_generic_sorter = true, -- override the generic sorter
+			override_file_sorter = true, -- override the file sorter
+			case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+		},
+	},
+	pickers = {
+		find_files = {
+			hidden = true,
+		},
+		grep_string = {
+			additional_args = { "--hidden" },
+		},
+		live_grep = {
+			additional_args = { "--hidden" },
+		},
+	},
+})
+
 require("telescope").load_extension("git_worktree")
 require("telescope").load_extension("lazygit")
 
 -- enable telescope fzf native
-pcall(require("telescope").load_extension, "fzf")
-require('telescope').load_extension('neoclip')
+require("telescope").load_extension("neoclip")
 
-require("telescope").setup()
+require("telescope").load_extension("fzf")
+
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[F]ind [F]iles" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[F]ile by [G]rep" })
 vim.keymap.set("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "[F]ind existing [B]uffers" })
@@ -16,7 +41,6 @@ vim.keymap.set(
 	"n",
 	"<Leader>gw",
 	"<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>",
-	silent,
 	{ desc = "[G]it [W]orktree" }
 )
 

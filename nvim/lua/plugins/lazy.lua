@@ -33,6 +33,7 @@ local plugins = {
 		version = "0.1.4",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{
 		"nvim-tree/nvim-tree.lua",
 		version = "*",
@@ -209,14 +210,14 @@ local plugins = {
 	},
 	{
 		"christoomey/vim-tmux-navigator",
-        event = "VimEnter",
+		event = "VimEnter",
 	},
-    {
-        "AckslD/nvim-neoclip.lua",
-        config = function()
-            require('neoclip').setup()
-        end,
-    }
+	{
+		"AckslD/nvim-neoclip.lua",
+		config = function()
+			require("neoclip").setup()
+		end,
+	},
 }
 
 local opts = {
