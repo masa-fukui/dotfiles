@@ -14,7 +14,7 @@ config.enable_scroll_bar = false
 
 -- appearance
 config.color_scheme = 'Gruvbox Material (Gogh)'
-config.font_size = 12.5
+config.font_size = 13.0
 config.window_decorations = 'RESIZE'
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="DemiBold"},
