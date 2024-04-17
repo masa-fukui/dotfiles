@@ -9,7 +9,8 @@ error_symbol = '[\$](bold red)'
 disabled = true
 
 [aws]
-disabled = true
+format = '[ $profile](bold yellow)'
+disabled = false
 
 [ruby]
 disabled = true
