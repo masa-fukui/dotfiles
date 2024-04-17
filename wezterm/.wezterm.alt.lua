@@ -16,7 +16,10 @@ config.enable_scroll_bar = false
 -- config.color_scheme = 'Catppuccin Mocha'
 config.color_scheme = 'Kanagawa (Gogh)'
 -- config.color_scheme = 'Monokai Pro (Gogh)'
-config.font = wezterm.font('JetBrainsMono Nerd Font', {weight='DemiBold'})
+config.font = wezterm.font_with_fallback({
+    {family="JetBrainsMono Nerd Font", weight="DemiBold"},
+    {family="Twemoji Mozilla", assume_emoji_presentation = true},
+})
 config.font_size = 13
 config.window_decorations = 'RESIZE'
 

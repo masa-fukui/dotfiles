@@ -1,5 +1,10 @@
-# iterm2
 add_newline = true
+
+[git_branch]
+symbol = " "
+
+[git_status]
+style = "bold purple"
 
 [character]
 success_symbol = '[\$](bold green)'
@@ -9,11 +14,16 @@ error_symbol = '[\$](bold red)'
 disabled = true
 
 [aws]
-format = '[ $profile](bold yellow)'
 disabled = false
+symbol = ' '
+format = 'using [$symbol($profile )(\[$duration\] )]($style)'
 
 [ruby]
 disabled = true
+
+[python]
+symbol = ' '
+format = '[$symbol$version ](blue)'
 
 [lua]
 disabled = true
