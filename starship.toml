@@ -1,4 +1,3 @@
-# iterm2
 add_newline = true
 
 [character]
@@ -9,11 +8,16 @@ error_symbol = '[\$](bold red)'
 disabled = true
 
 [aws]
-format = '[ $profile](bold yellow)'
 disabled = false
+symbol = ' '
+format = 'using [$symbol($profile )(\[$duration\] )]($style)'
 
 [ruby]
 disabled = true
+
+[python]
+symbol = ' '
+format = '[$symbol$version ](blue)'
 
 [lua]
 disabled = true
