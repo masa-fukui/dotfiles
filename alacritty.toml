@@ -81,4 +81,4 @@ x = 5
 y = 5
 
 [window]
-decorations = "none"
+decorations = "None"
