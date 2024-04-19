@@ -20,6 +20,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- window switch
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "<leader>j", ":wincmd j<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "<leader>k", ":wincmd k<CR>", { silent = true, noremap = true })
 
 -- bind shift+h to :bprev
 vim.api.nvim_set_keymap("n", "H", ":bprev<cr>", { noremap = true, silent = true })
