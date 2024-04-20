@@ -18,6 +18,7 @@ local plugins = {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
 	},
+    { "rose-pine/neovim", name = "rose-pine" },
 	{ "sainnhe/gruvbox-material" },
 	{
 		"akinsho/nvim-bufferline.lua",
