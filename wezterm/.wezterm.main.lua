@@ -13,7 +13,8 @@ config.enable_tab_bar = false
 config.enable_scroll_bar = false
 
 -- appearance
-config.color_scheme = 'Gruvbox Material (Gogh)'
+config.window_background_opacity = 0.9
+config.color_scheme = 'Rosé Pine (Gogh)'
 config.font_size = 13.0
 config.window_decorations = 'RESIZE'
 config.font = wezterm.font_with_fallback({

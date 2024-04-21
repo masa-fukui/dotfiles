@@ -7,7 +7,8 @@ if workenv == "work" then
 elseif workenv == "linux" then
     vim.cmd("colorscheme rose-pine")
 else
-	vim.cmd("colorscheme gruvbox-material")
+	-- vim.cmd("colorscheme gruvbox-material")
+    vim.cmd("colorscheme rose-pine")
 end
 
 -- terraform indent settings
