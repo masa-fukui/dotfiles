@@ -16,6 +16,7 @@ require("plugins.lsp")
 require("plugins.harpoon")
 require("plugins.misc")
 require("plugins.lualine")
+require("plugins.rose-pine")
 
 -- load format options
 require("format")
