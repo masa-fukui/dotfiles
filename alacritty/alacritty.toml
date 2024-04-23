@@ -15,44 +15,6 @@ style = "Bold"
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
-# Keyboard bindings
-[[keyboard.bindings]]
-action = "SpawnNewInstance"
-key = "N"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = " "
-key = "Space"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u0015"
-key = "Back"
-mods = "Super"
-
-[[keyboard.bindings]]
-chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001BOH"
-key = "Left"
-mode = "AppCursor"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001BOF"
-key = "Right"
-mode = "AppCursor"
-mods = "Command"
-
 # Window settings
 [window.padding]
 x = 5
@@ -61,3 +23,4 @@ y = 5
 [window]
 decorations = "Buttonless"
 opacity = 0.95
+option_as_alt = "Both"
