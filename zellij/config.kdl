@@ -1,4 +1,13 @@
-// If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
+default_layout "compact"
+theme "catppuccin-mocha"
+
+ui {
+    pane_frames {
+        hide_session_name true
+        round_corners true
+    }
+}
+
 keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
@@ -255,12 +264,6 @@ pane_frames true
 // also default to the scrollback size. This does nothing if `serialize_pane_viewport` is not true.
 //
 // scrollback_lines_to_serialize 10000
-
-
-// Choose the theme that is specified in the themes section.
-// Default: default
-//
-theme "catppuccin-mocha"
 
 // The name of the default layout to load on startup
 // Default: "default"
