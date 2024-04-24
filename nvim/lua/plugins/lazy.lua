@@ -24,7 +24,15 @@ local plugins = {
 		"akinsho/nvim-bufferline.lua",
 		dependencies = "nvim-tree/nvim-web-devicons",
 	},
-	{ "catppuccin/nvim", name = "catppuccin" },
+	{
+        "catppuccin/nvim",
+        name = "catppuccin",
+        config = function()
+            require("catppuccin").setup({
+                transparent_background = true,
+            })
+        end,
+    },
 	{ "rebelot/kanagawa.nvim", name = "rebelot" },
 	"nvim-lua/plenary.nvim",
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
