@@ -1,9 +1,9 @@
 live_config_reload = true
 
 import = [
-    # "~/.config/alacritty/rose-pine.toml",
+    "~/.config/alacritty/rose-pine.toml",
     # "~/.config/alacritty/rose-pine-moon.toml",
-    "~/.config/alacritty/gruvbox-material.toml"
+    # "~/.config/alacritty/gruvbox-material.toml"
     # "~/.config/alacritty/catppuccin-mocha.toml",
 ]
 
