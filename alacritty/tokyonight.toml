@@ -1,6 +1,4 @@
-
 # Tokyo Night Color Scheme for Alacritty
-# Based on your YAML-like structure provided
 
 [colors.primary]
 background = "#1a1b26"
