@@ -13,8 +13,8 @@ config.enable_tab_bar = false
 config.enable_scroll_bar = false
 
 -- appearance
--- config.color_scheme = 'Catppuccin Mocha'
-config.color_scheme = 'Kanagawa (Gogh)'
+config.color_scheme = 'Catppuccin Mocha'
+-- config.color_scheme = 'Kanagawa (Gogh)'
 -- config.color_scheme = 'Monokai Pro (Gogh)'
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="DemiBold"},
