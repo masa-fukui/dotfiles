@@ -238,13 +238,9 @@ local plugins = {
         })
       end,
     },
-    {
-       'comfysage/evergarden',
-       opts = {
-         transparent_background = true,
-          contrast_dark = 'hard', -- 'hard'|'medium'|'soft'
-       }
-    }
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = {
+        transparent_mode = true,
+    }}
 }
 
 local opts = {

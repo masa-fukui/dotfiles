@@ -8,8 +8,8 @@ elseif workenv == "linux" then
     vim.cmd("colorscheme rose-pine")
 else
 	-- vim.cmd("colorscheme gruvbox-material")
-    vim.cmd("colorscheme rose-pine")
-    -- vim.cmd("colorscheme tokyonight-night")
+    -- vim.cmd("colorscheme rose-pine")
+    vim.cmd("colorscheme tokyonight-night")
     -- vim.cmd("colorscheme catppuccin")
     -- vim.cmd("colorscheme evergarden") 
 end
