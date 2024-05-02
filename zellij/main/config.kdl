@@ -1,5 +1,5 @@
 default_layout "compact"
-theme "gruvbox-dark"
+theme "catppuccin-mocha"
 
 ui {
     pane_frames {
