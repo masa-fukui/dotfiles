@@ -1,0 +1,39 @@
+add_newline = true
+
+[package]
+symbol = ""
+
+[git_branch]
+symbol = " "
+
+[git_status]
+style = "bold yellow"
+
+[character]
+success_symbol = '[>](bold purple)'
+error_symbol = '[>](bold red)'
+
+[gcloud]
+disabled = true
+
+[aws]
+disabled = false
+style = 'bold yellow'
+symbol = ' '
+format = 'using [$symbol($profile )(\[$duration\] )]($style)'
+
+[ruby]
+disabled = true
+
+[python]
+symbol = ' '
+style = 'bold blue'
+
+[lua]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[golang]
+format = '[ $version ](bold blue)'
