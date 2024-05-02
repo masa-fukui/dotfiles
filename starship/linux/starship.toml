@@ -5,6 +5,7 @@ symbol = ""
 
 [git_branch]
 symbol = " "
+style = "bold yellow"
 
 [git_status]
 style = "bold yellow"
