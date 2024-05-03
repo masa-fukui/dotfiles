@@ -25,7 +25,7 @@ x = 5
 y = 5
 
 [window]
-decorations = "Buttonless"
+decorations = "None"
 opacity = 0.97
 option_as_alt = "Both"
 
