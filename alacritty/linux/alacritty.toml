@@ -1,11 +1,10 @@
 live_config_reload = true
 
 import = [
-    "~/.config/alacritty/rose-pine.toml",
+    # "~/.config/alacritty/rose-pine.toml",
     # "~/.config/alacritty/tokyonight.toml",
     # "~/.config/alacritty/rose-pine-moon.toml",
-    # "~/.config/alacritty/gruvbox-material.toml"
-    # "~/.config/alacritty/catppuccin-mocha.toml",
+    "~/.config/alacritty/catppuccin-mocha.toml",
 ]
 
 [env]
@@ -32,3 +31,7 @@ y = 5
 decorations = "Buttonless"
 opacity = 0.97
 option_as_alt = "Both"
+
+[window.dimensions]
+columns =  150
+lines = 120
