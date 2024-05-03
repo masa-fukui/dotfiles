@@ -3,15 +3,13 @@ local workenv = os.getenv("WORK_ENV")
 
 if workenv == "work" then
 	vim.cmd("colorscheme catppuccin-mocha")
-	-- vim.cmd("colorscheme kanagawa")
 elseif workenv == "linux" then
-    vim.cmd("colorscheme rose-pine")
+    -- vim.cmd("colorscheme rose-pine")
+    vim.cmd("colorscheme tokyonight-night")
 else
 	-- vim.cmd("colorscheme gruvbox-material")
     -- vim.cmd("colorscheme rose-pine")
     vim.cmd("colorscheme tokyonight-night")
-    -- vim.cmd("colorscheme catppuccin")
-    -- vim.cmd("colorscheme evergarden") 
 end
 
 -- terraform indent settings
