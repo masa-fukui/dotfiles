@@ -1,10 +1,7 @@
 live_config_reload = true
 
 import = [
-    # "~/.config/alacritty/rose-pine.toml",
-    # "~/.config/alacritty/tokyonight.toml",
-    # "~/.config/alacritty/rose-pine-moon.toml",
-    "~/.config/alacritty/catppuccin-mocha.toml",
+    "~/.config/alacritty/themes/ashes_dark.toml",
 ]
 
 [env]
