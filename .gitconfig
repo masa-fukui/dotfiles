@@ -7,6 +7,9 @@
 [interactive]
 	diffFilter = delta --color-only
 
+[core]
+    pager = delta
+
 [delta]
 	side-by-side = true 
 	line-numbers = true
