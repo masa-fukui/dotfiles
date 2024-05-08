@@ -14,6 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	-- core
+    {
+        "rcarriga/nvim-notify"
+    },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },

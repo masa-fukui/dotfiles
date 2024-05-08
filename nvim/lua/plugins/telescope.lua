@@ -30,6 +30,7 @@ require("telescope").load_extension("lazygit")
 require("telescope").load_extension("neoclip")
 
 require("telescope").load_extension("fzf")
+require("telescope").load_extension("notify")
 
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[F]ind [F]iles" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[F]ile by [G]rep" })
