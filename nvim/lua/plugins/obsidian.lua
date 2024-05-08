@@ -7,10 +7,11 @@ require("obsidian").setup({
 	},
 
 	open_app_foreground = true,
+    ui = {
+        enable = false,
+    }
 })
 
-vim.opt.conceallevel = 2
---
 -- remaps
 vim.keymap.set("n", "<leader>oo", "<cmd>ObsidianOpen<CR>", { desc = "Open in Obsidian App" })
 vim.keymap.set("n", "<leader>ob", "<cmd>ObsidianBacklinks<CR>", { desc = "Show ObsidianBacklinks" })

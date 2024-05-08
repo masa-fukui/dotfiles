@@ -31,14 +31,6 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
--- set conceallevel = 0 for md files
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "markdown",
-	callback = function()
-		vim.opt_local.conceallevel = 0
-	end,
-})
-
 -- line number colors
 function LineNumberColors()
 	vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#878787", bold = false })
