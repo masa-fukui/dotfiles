@@ -13,8 +13,10 @@ config.enable_tab_bar = false
 config.enable_scroll_bar = false
 
 -- appearance
-config.color_scheme = 'Catppuccin Mocha (Gogh)'
+config.color_scheme = 'One Dark (Gogh)'
+-- config.color_scheme = 'Catppuccin Mocha (Gogh)'
 -- config.color_scheme = 'Kanagawa (Gogh)'
+config.color_scheme = 'Tokyo Night (Gogh)'
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="DemiBold"},
     {family="Twemoji Mozilla", assume_emoji_presentation = true},
