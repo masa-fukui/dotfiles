@@ -1,5 +1,7 @@
 // default_layout "compact"
+default_layout "compact"
 theme "catppuccin-mocha"
+pane_frames false
 
 ui {
     pane_frames {
