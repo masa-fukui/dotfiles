@@ -238,10 +238,19 @@ local plugins = {
         })
       end,
     },
-    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = {
-        transparent_mode = true,
-    }},
-    { "luisiacc/gruvbox-baby"}
+    {
+      "NeogitOrg/neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim",         -- required
+        "sindrets/diffview.nvim",        -- optional - Diff integration
+
+        -- Only one of these is needed, not both.
+        "ibhagwan/fzf-lua",              -- optional
+      },
+      config = function()
+        require("neogit").setup({})
+      end,
+    },
 }
 
 local opts = {
