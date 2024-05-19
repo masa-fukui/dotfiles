@@ -45,6 +45,7 @@ export PATH=$PATH:$HOME/go/bin
 alias c='clear'
 alias v='nvim'
 alias sf='screenfetch'
+alias ls='exa'
 alias el='exa -l'
 alias elt='exa -l --tree'
 alias bat='batcat'
