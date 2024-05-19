@@ -104,7 +104,6 @@ local plugins = {
 		end,
 	},
 	"tpope/vim-fugitive",
-	"tpope/vim-commentary",
 
 	{
 		"kdheepak/lazygit.nvim",
@@ -237,6 +236,18 @@ local plugins = {
         })
       end,
     },
+    {
+      "NeogitOrg/neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim",         -- required
+        "sindrets/diffview.nvim",        -- optional - Diff integration
+
+        -- Only one of these is needed, not both.
+        "nvim-telescope/telescope.nvim", -- optional
+        "ibhagwan/fzf-lua",              -- optional
+      },
+      config = true
+    }
 }
 
 local opts = {
