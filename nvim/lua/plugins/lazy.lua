@@ -25,6 +25,7 @@ local plugins = {
 	{ "sainnhe/gruvbox-material" },
 	{
 		"akinsho/nvim-bufferline.lua",
+        branch = "main",
 		dependencies = "nvim-tree/nvim-web-devicons",
 	},
 	{
