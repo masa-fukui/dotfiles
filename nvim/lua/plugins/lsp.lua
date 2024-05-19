@@ -116,6 +116,19 @@ cmp.setup({
 	},
 })
 
+-- inlay hints
+
+local function toggle_inlay_hints()
+    local is_enabled = vim.lsp.inlay_hint.is_enabled({})
+    if is_enabled then
+        vim.lsp.inlay_hint.enable(false)
+        print("[INFO] inlay hints DISABLED")
+    else
+        vim.lsp.inlay_hint.enable(true)
+        print("[INFO] inlay hints ENABLED")
+    end
+end
+
 -- keymaps
 vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>")
 vim.keymap.set("n", "gf", "<cmd>lua vim.lsp.buf.formatting()<CR>")
@@ -129,6 +142,7 @@ vim.keymap.set("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 vim.keymap.set("n", "ge", "<cmd>lua vim.diagnostic.open_float()<CR>")
 vim.keymap.set("n", "g]", "<cmd>lua vim.diagnostic.goto_next()<CR>")
 vim.keymap.set("n", "g[", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
+vim.keymap.set("n", "<leader>si", toggle_inlay_hints, { desc = "toggle inlay hints" })
 
 -- LSP handlers
 vim.lsp.handlers["textDocument/publishDiagnostics"] =
