@@ -103,8 +103,6 @@ local plugins = {
 			})
 		end,
 	},
-	"tpope/vim-fugitive",
-
 	{
 		"kdheepak/lazygit.nvim",
 		dependencies = {
