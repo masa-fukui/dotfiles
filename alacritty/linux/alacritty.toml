@@ -24,6 +24,26 @@ style = "Regular"
 x = 5
 y = 5
 
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key   = "Left"
+mods  = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key   = "Right"
+mods  = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0001"
+key   = "Left"
+mods  = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0005"
+key   = "Right"
+mods  = "Control"
+
 [window]
 decorations = "None"
 opacity = 0.97

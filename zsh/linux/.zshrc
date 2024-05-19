@@ -20,6 +20,7 @@ zinit cdreplay -q
 
 # add in snippets
 zinit snippet OMZP::git
+zinit snippet OMZ::plugins/git/git.plugin.zsh
 
 ############################################
 # - Environment & Path
@@ -53,6 +54,8 @@ unalias zi
 # History 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+bindkey '^[OA' history-beginning-search-backward
+bindkey '^[OB' history-beginning-search-forward
 
 ############################################
 # - Initialization & Plugins
@@ -71,3 +74,10 @@ eval "$(pyenv init -)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(fzf --zsh)"
 
+############################################
+# - Misc
+############################################
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
