@@ -40,7 +40,7 @@ color_gray = '#44475a'   # Keeping this color as is, assuming it is used for neu
 show_always = true
 style_user = "bg:color_bg1 fg:color_fg0"
 style_root = "bg:color_bg1 fg:color_fg0"
-format = '[ P! ]($style)'
+format = '[ $user ]($style)'
 
 [directory]
 style = "fg:color_fg0 bg:color_purple"

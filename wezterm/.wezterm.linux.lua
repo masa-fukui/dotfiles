@@ -15,6 +15,7 @@ config.enable_scroll_bar = false
 -- appearance
 config.window_background_opacity = 1.0
 config.font_size = 12.0
+config.color_scheme = 'Catppuccin Mocha (Gogh)'
 config.window_decorations = 'TITLE'
 config.font = wezterm.font_with_fallback({
     {family="Hack Nerd Font", weight="Regular"},
