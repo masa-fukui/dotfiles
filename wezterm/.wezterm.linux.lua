@@ -25,10 +25,10 @@ config.font = wezterm.font_with_fallback({
 -- keys
 local act = wezterm.action
 config.keys = {
-    {key="LeftArrow", mods="OPT", action=wezterm.action{SendString="\x1bb"}}, -- ALT + Left to move one word left
-    {key="LeftArrow", mods="CMD", action=wezterm.action{SendString="\x1bOH"}}, -- CMD + Left to move to the beginning of the line
-    {key="RightArrow", mods="OPT", action=wezterm.action{SendString="\x1bf"}}, -- ALT + Right to move one word right
-    {key="RightArrow", mods="CMD", action=wezterm.action{SendString="\x1bOF"}}, -- CMD + Right to move to the end of the line
+    {key="LeftArrow", mods="ALT", action=wezterm.action{SendString="\x1bb"}}, -- ALT + Left to move one word left
+    {key="LeftArrow", mods="CTRL", action=wezterm.action{SendString="\x1bOH"}}, -- CMD + Left to move to the beginning of the line
+    {key="RightArrow", mods="ALT", action=wezterm.action{SendString="\x1bf"}}, -- ALT + Right to move one word right
+    {key="RightArrow", mods="CTRL", action=wezterm.action{SendString="\x1bOF"}}, -- CMD + Right to move to the end of the line
 }
 
 return config
