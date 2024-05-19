@@ -37,9 +37,7 @@ local plugins = {
         end,
     },
 	{ "rebelot/kanagawa.nvim", name = "rebelot" },
-	"nvim-lua/plenary.nvim",
-	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
-
+	{ "nvim-lua/plenary.nvim" },
 	{
 		"nvim-telescope/telescope.nvim",
 		version = "0.1.4",
