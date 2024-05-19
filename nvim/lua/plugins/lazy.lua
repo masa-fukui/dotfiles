@@ -234,6 +234,7 @@ local plugins = {
         })
       end,
     },
+    { "Mofiqul/dracula.nvim" },
 }
 
 local opts = {

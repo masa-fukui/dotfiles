@@ -6,6 +6,7 @@ if workenv == "work" then
 elseif workenv == "linux" then
     vim.cmd("colorscheme tokyonight-night")
 elseif workenv == "linux-pop" then
+    vim.cmd("colorscheme dracula")
 else
     vim.cmd("colorscheme tokyonight-night")
 end
