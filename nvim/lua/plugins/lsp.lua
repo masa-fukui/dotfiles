@@ -27,6 +27,11 @@ require("lspconfig").gopls.setup({
 				unusedparams = true,
 			},
 			staticcheck = true,
+            ["ui.inlayhint.hints"] = {
+                compositeLiteralFields = true,
+                constantValues = true,
+                parameterNames = true
+            },
 		},
 	},
 })
