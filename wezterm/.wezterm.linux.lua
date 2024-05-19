@@ -13,12 +13,11 @@ config.enable_tab_bar = false
 config.enable_scroll_bar = false
 
 -- appearance
-config.window_background_opacity = 0.9
-config.color_scheme = 'Rosé Pine (Gogh)'
+config.window_background_opacity = 1.0
 config.font_size = 12.0
 config.window_decorations = 'TITLE'
 config.font = wezterm.font_with_fallback({
-    {family="JetBrainsMono Nerd Font", weight="Regular"},
+    {family="Hack Nerd Font", weight="Regular"},
     {family="Twemoji Mozilla", weight="Regular"},
 })
 
