@@ -21,6 +21,7 @@ zinit cdreplay -q
 # add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZ::plugins/git/git.plugin.zsh
+zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
 
 ############################################
 # - Environment & Path
