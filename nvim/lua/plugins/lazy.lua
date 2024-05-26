@@ -15,7 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	-- core
     {
-        "rcarriga/nvim-notify"
+        "rcarriga/nvim-notify",
+        opts = {
+          background_colour = "#000000"
+        },
     },
 	{
 		"nvim-lualine/lualine.nvim",
