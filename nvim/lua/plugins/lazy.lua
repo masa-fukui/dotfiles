@@ -235,6 +235,7 @@ local plugins = {
       end,
     },
     { "Mofiqul/dracula.nvim" },
+    {'akinsho/toggleterm.nvim', version = "*"},
 }
 
 local opts = {
