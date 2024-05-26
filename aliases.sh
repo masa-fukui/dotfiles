@@ -32,12 +32,12 @@ function newsess {
 }
 
 # aliases 
-alias el="exa -l"
-alias ll="exa -l"
-alias et="exa -T"
-alias elt="exa -lT"
-
 alias bat='bat -p'
+alias ls='eza'
+alias ll='eza -l'
+alias el="eza -l --icons --git -a"
+alias elt="eza --tree --level=3 --long --icons --git"
+alias cdr='cd $(git rev-parse --show-toplevel)'
 
 alias rustbook='rustup doc --book'
 alias gcommit='~/dotfiles/scripts/gum/better_commit.sh'
