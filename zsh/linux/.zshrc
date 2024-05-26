@@ -46,10 +46,10 @@ export PATH=$PATH:$HOME/go/bin
 alias c='clear'
 alias v='nvim'
 alias sf='screenfetch'
-alias ls='exa'
-alias el='exa -l'
-alias elt='exa -l --tree'
+alias ls='eza'
 alias bat='batcat'
+alias el="eza -l --icons --git -a"
+alias elt="eza --tree --level=3 --long --icons --git"
 
 unalias zi
 
