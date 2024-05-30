@@ -239,6 +239,11 @@ local plugins = {
     },
     { "Mofiqul/dracula.nvim" },
     {'akinsho/toggleterm.nvim', version = "*"},
+    {'sainnhe/gruvbox-material'},
+    {'sainnhe/sonokai'},
+    {'sainnhe/everforest'},
+    {'sainnhe/edge'},
+    {'sainnhe/forest-night'},
 }
 
 local opts = {
