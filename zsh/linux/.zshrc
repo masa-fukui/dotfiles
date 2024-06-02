@@ -53,6 +53,12 @@ alias elt="eza --tree --level=3 --long --icons --git"
 
 unalias zi
 
+# functions
+function take() {
+    mkdir -p $1
+    cd $1
+}
+
 # History 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
