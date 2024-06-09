@@ -1,3 +1,7 @@
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- general
 require("remap")
 require("options")
@@ -11,7 +15,6 @@ require("plugins.noice")
 require("plugins.null-ls")
 require("plugins.obsidian")
 require("plugins.treesitter")
-require("plugins.nvimtree")
 require("plugins.lsp")
 require("plugins.harpoon")
 require("plugins.misc")

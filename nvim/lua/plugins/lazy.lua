@@ -49,14 +49,6 @@ local plugins = {
 	},
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	{
-		"nvim-tree/nvim-tree.lua",
-		version = "*",
-		lazy = false,
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-	},
-	{
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
 		dependencies = { "nvim-lua/plenary.nvim" },
@@ -244,6 +236,17 @@ local plugins = {
     {'sainnhe/everforest'},
     {'sainnhe/edge'},
     {'sainnhe/forest-night'},
+    {
+      "nvim-neo-tree/neo-tree.nvim",
+      branch = "v3.x",
+      dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    },
+    lazy = false,
+}
 }
 
 local opts = {
