@@ -12,6 +12,8 @@ vim.keymap.set("n", "<leader>fn", "<cmd>Telescope neoclip<CR>", { desc = "neocli
 
 -- Neotree: remaps
 vim.keymap.set("n", "<leader>e", '<Cmd>Neotree toggle<CR>')
+vim.keymap.set("n", "<leader>ngs", '<Cmd>Neotree git_status<CR>')
+vim.keymap.set("n", "<leader>nb", '<Cmd>Neotree buffers<CR>')
 
 -- trouble
 vim.keymap.set("n", "<leader>xx", function()
