@@ -10,8 +10,8 @@ vim.g.rustfmt_autosave = 1
 -- neoclip: remaps
 vim.keymap.set("n", "<leader>fn", "<cmd>Telescope neoclip<CR>", { desc = "neoclip" })
 
--- Nvimtree: remaps
-vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
+-- Neotree: remaps
+vim.keymap.set("n", "<leader>e", '<Cmd>Neotree toggle<CR>')
 
 -- trouble
 vim.keymap.set("n", "<leader>xx", function()
