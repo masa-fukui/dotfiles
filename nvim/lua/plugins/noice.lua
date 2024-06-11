@@ -3,6 +3,12 @@ require("noice").setup({
 		enabled = true,
 		view = "mini",
 	},
+    notify = {
+        enabled = true,
+        view = "mini",
+        stages = "fade_in_slide_out",
+        render = "minimal",
+    },
 	lsp = {
 		override = {
 			["vim.lsp.util.convert_input_to_markdown_lines"] = true,
