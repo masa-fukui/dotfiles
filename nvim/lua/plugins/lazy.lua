@@ -14,32 +14,32 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	-- core
-    {
-        "rcarriga/nvim-notify",
-        opts = {
-          background_colour = "#000000"
-        },
-    },
+	{
+		"rcarriga/nvim-notify",
+		opts = {
+			background_colour = "#000000",
+		},
+	},
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
 	},
-    { "rose-pine/neovim", name = "rose-pine" },
+	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "sainnhe/gruvbox-material" },
 	{
 		"akinsho/nvim-bufferline.lua",
-        branch = "main",
+		branch = "main",
 		dependencies = "nvim-tree/nvim-web-devicons",
 	},
 	{
-        "catppuccin/nvim",
-        name = "catppuccin",
-        config = function()
-            require("catppuccin").setup({
-                transparent_background = true,
-            })
-        end,
-    },
+		"catppuccin/nvim",
+		name = "catppuccin",
+		config = function()
+			require("catppuccin").setup({
+				transparent_background = true,
+			})
+		end,
+	},
 	{ "rebelot/kanagawa.nvim", name = "rebelot" },
 	{ "nvim-lua/plenary.nvim" },
 	{
@@ -218,35 +218,35 @@ local plugins = {
 			require("neoclip").setup()
 		end,
 	},
-    {
-      "folke/tokyonight.nvim",
-      lazy = false,
-      priority = 1000,
-      opts = {},
-      config = function()
-        require("tokyonight").setup({
-            transparent = true,
-        })
-      end,
-    },
-    { "Mofiqul/dracula.nvim" },
-    {'akinsho/toggleterm.nvim', version = "*"},
-    {'sainnhe/gruvbox-material'},
-    {'sainnhe/sonokai'},
-    {'sainnhe/everforest'},
-    {'sainnhe/edge'},
-    {'sainnhe/forest-night'},
-    {
-      "nvim-neo-tree/neo-tree.nvim",
-      branch = "v3.x",
-      dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    },
-    lazy = false,
-}
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+		config = function()
+			require("tokyonight").setup({
+				transparent = true,
+			})
+		end,
+	},
+	{ "Mofiqul/dracula.nvim" },
+	{ "akinsho/toggleterm.nvim", version = "*" },
+	{ "sainnhe/gruvbox-material" },
+	{ "sainnhe/sonokai" },
+	{ "sainnhe/everforest" },
+	{ "sainnhe/edge" },
+	{ "sainnhe/forest-night" },
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+		},
+		lazy = false,
+	},
 }
 
 local opts = {

@@ -11,9 +11,9 @@ vim.g.rustfmt_autosave = 1
 vim.keymap.set("n", "<leader>fn", "<cmd>Telescope neoclip<CR>", { desc = "neoclip" })
 
 -- Neotree: remaps
-vim.keymap.set("n", "<leader>e", '<Cmd>Neotree toggle<CR>')
-vim.keymap.set("n", "<leader>ngs", '<Cmd>Neotree git_status<CR>')
-vim.keymap.set("n", "<leader>nb", '<Cmd>Neotree buffers<CR>')
+vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
+vim.keymap.set("n", "<leader>ngs", "<Cmd>Neotree git_status<CR>")
+vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
 
 -- trouble
 vim.keymap.set("n", "<leader>xx", function()
@@ -44,5 +44,3 @@ vim.keymap.set("n", "<C-Left>", "<cmd>TmuxNavigateLeft<CR>", { desc = "TmuxNavig
 vim.keymap.set("n", "<C-Right>", "<cmd>TmuxNavigateRight<CR>", { desc = "TmuxNavigateRight" })
 vim.keymap.set("n", "<C-Up>", "<cmd>TmuxNavigateUp<CR>", { desc = "TmuxNavigateUp" })
 vim.keymap.set("n", "<C-Down>", "<cmd>TmuxNavigateDown<CR>", { desc = "TmuxNavigateDown" })
-
-

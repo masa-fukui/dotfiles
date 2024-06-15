@@ -27,11 +27,11 @@ require("lspconfig").gopls.setup({
 				unusedparams = true,
 			},
 			staticcheck = true,
-            ["ui.inlayhint.hints"] = {
-                compositeLiteralFields = true,
-                constantValues = true,
-                parameterNames = true
-            },
+			["ui.inlayhint.hints"] = {
+				compositeLiteralFields = true,
+				constantValues = true,
+				parameterNames = true,
+			},
 		},
 	},
 })
@@ -124,14 +124,14 @@ cmp.setup({
 -- inlay hints
 
 local function toggle_inlay_hints()
-    local is_enabled = vim.lsp.inlay_hint.is_enabled({})
-    if is_enabled then
-        vim.lsp.inlay_hint.enable(false)
-        print("[INFO] inlay hints DISABLED")
-    else
-        vim.lsp.inlay_hint.enable(true)
-        print("[INFO] inlay hints ENABLED")
-    end
+	local is_enabled = vim.lsp.inlay_hint.is_enabled({})
+	if is_enabled then
+		vim.lsp.inlay_hint.enable(false)
+		print("[INFO] inlay hints DISABLED")
+	else
+		vim.lsp.inlay_hint.enable(true)
+		print("[INFO] inlay hints ENABLED")
+	end
 end
 
 -- keymaps

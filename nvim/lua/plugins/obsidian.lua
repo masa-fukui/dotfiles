@@ -7,9 +7,9 @@ require("obsidian").setup({
 	},
 
 	open_app_foreground = true,
-    ui = {
-        enable = false,
-    }
+	ui = {
+		enable = false,
+	},
 })
 
 -- remaps
