@@ -16,24 +16,8 @@ vim.keymap.set("n", "<leader>ngs", "<Cmd>Neotree git_status<CR>")
 vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
 
 -- trouble
-vim.keymap.set("n", "<leader>xx", function()
-	require("trouble").toggle()
-end, { desc = "Toggle trouble" })
-vim.keymap.set("n", "<leader>xw", function()
-	require("trouble").toggle("workspace_diagnostics")
-end, { desc = "Toggle trouble workspace diagnostics" })
-vim.keymap.set("n", "<leader>xd", function()
-	require("trouble").toggle("document_diagnostics")
-end, { desc = "Toggle trouble workspace diagnostics" })
-vim.keymap.set("n", "<leader>xq", function()
-	require("trouble").toggle("quickfix")
-end, { desc = "Toggle trouble quickfix" })
-vim.keymap.set("n", "<leader>xl", function()
-	require("trouble").toggle("loclist")
-end, { desc = "Toggle trouble loclist" })
-vim.keymap.set("n", "<leader>xr", function()
-	require("trouble").toggle("lsp_references")
-end, { desc = "Toggle trouble lsp_ref" })
+vim.keymap.set("n", "<leader>xx", "<Cmd>Trouble diagnostics toggle<CR>", { desc = "Toggle trouble" })
+vim.keymap.set("n", "<leader>xb", "<Cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Toggle trouble (Current Buffer)" })
 
 -- kanagawa
 require("kanagawa").setup({

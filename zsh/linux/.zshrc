@@ -86,6 +86,6 @@ eval "$(fzf --zsh)"
 # - Misc
 ############################################
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=1000
+HISTSIZE=20000
+SAVEHIST=20000
 setopt SHARE_HISTORY
