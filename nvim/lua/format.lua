@@ -30,6 +30,14 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+-- set commentstring for sql
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "sql",
+    callback = function()
+        vim.opt_local.commentstring = "-- %s"
+    end,
+})
+
 -- line number colors
 function LineNumberColors()
 	vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#878787", bold = false })
