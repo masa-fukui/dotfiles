@@ -50,6 +50,8 @@ alias ls='eza'
 alias bat='batcat'
 alias el="eza -l --icons --git -a"
 alias elt="eza --tree --level=3 --long --icons --git"
+alias oupdate="git add . && git commit -m 'update $(date)' && git push"
+alias fd="fdfind"
 
 unalias zi
 
