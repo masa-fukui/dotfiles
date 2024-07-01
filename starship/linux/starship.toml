@@ -19,6 +19,7 @@ $java\
 $kotlin\
 $haskell\
 $python\
+$nix_shell\
 [](fg:color_gray)\
 $line_break$character"""
 
@@ -122,6 +123,11 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_gray)]($style)'
 symbol = ""
 style = "bg:color_gray"
 format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_gray)]($style)'
+
+[nix_shell]
+symbol = ""
+style = "bg:color_gray"
+format = '[[ $symbol( $state $name ) ](fg:color_fg0 bg:color_gray)]($style)'
 
 [python]
 symbol = ""
