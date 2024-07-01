@@ -16,7 +16,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-    pkgs.hello
     pkgs.gitleaks
   ];
 
@@ -52,7 +51,7 @@
   #  /etc/profiles/per-user/bongo/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
