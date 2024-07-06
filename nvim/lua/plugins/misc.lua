@@ -28,3 +28,7 @@ vim.keymap.set("n", "<C-Left>", "<cmd>TmuxNavigateLeft<CR>", { desc = "TmuxNavig
 vim.keymap.set("n", "<C-Right>", "<cmd>TmuxNavigateRight<CR>", { desc = "TmuxNavigateRight" })
 vim.keymap.set("n", "<C-Up>", "<cmd>TmuxNavigateUp<CR>", { desc = "TmuxNavigateUp" })
 vim.keymap.set("n", "<C-Down>", "<cmd>TmuxNavigateDown<CR>", { desc = "TmuxNavigateDown" })
+
+-- copilot enable / disable
+vim.keymap.set("n", "<leader>ce", "<cmd>Copilot enable<CR>", { desc = "Enable copilot" })
+vim.keymap.set("n", "<leader>cd", "<cmd>Copilot disable<CR>", { desc = "Disable copilot" })
