@@ -11,7 +11,7 @@ local config = {}
 -- general
 config.enable_tab_bar = false
 config.enable_scroll_bar = false
-config.window_background_opacity = 0.90
+config.window_background_opacity = 0.95
 
 -- appearance
 config.color_scheme = 'Catppuccin Mocha (Gogh)'
