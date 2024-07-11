@@ -14,15 +14,16 @@ config.enable_scroll_bar = false
 config.window_background_opacity = 0.90
 
 -- appearance
--- config.color_scheme = 'Catppuccin Mocha (Gogh)'
-config.color_scheme = 'Panda (Gogh)'
+config.color_scheme = 'Catppuccin Mocha (Gogh)'
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="DemiBold"},
     {family="Twemoji Mozilla", assume_emoji_presentation = true},
 })
 config.font_size = 13
 config.window_decorations = 'RESIZE'
-
+config.colors = {
+  background = '#110d17',
+}
 -- keys
 local act = wezterm.action
 config.keys = {
