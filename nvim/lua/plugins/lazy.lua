@@ -189,15 +189,14 @@ local plugins = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {},
 	},
-	{
-		"folke/which-key.nvim",
-		event = "VeryLazy",
-		init = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 1000
-		end,
-		opts = {},
-	},
+	-- {
+	-- 	"folke/which-key.nvim",
+	-- 	event = "VeryLazy",
+	-- 	opts = {
+	--        },
+	--  keys = {
+	--        },
+	-- },
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
