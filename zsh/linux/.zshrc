@@ -91,3 +91,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=20000
 SAVEHIST=20000
 setopt SHARE_HISTORY
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
