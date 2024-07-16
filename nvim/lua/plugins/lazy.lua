@@ -254,12 +254,7 @@ local plugins = {
             "nvim-tree/nvim-web-devicons"
         },
     },
-    {
-        "lukas-reineke/indent-blankline.nvim",
-        config = function()
-            require("ibl").setup()
-        end,
-    }
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 }
 
 local opts = {
