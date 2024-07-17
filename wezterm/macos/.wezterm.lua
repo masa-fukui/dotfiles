@@ -31,6 +31,7 @@ config.keys = {
     {key="LeftArrow", mods="CMD", action=wezterm.action{SendString="\x1bOH"}}, -- CMD + Left to move to the beginning of the line
     {key="RightArrow", mods="OPT", action=wezterm.action{SendString="\x1bf"}}, -- ALT + Right to move one word right
     {key="RightArrow", mods="CMD", action=wezterm.action{SendString="\x1bOF"}}, -- CMD + Right to move to the end of the line
+    { key = 'y', mods = 'SHIFT|CTRL', action = act.ActivateCopyMode },
 }
 
 return config
