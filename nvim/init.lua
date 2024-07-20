@@ -20,7 +20,7 @@ require("plugins.harpoon")
 require("plugins.misc")
 require("plugins.lualine")
 require("plugins.rose-pine")
-require("plugins.toggleterm")
+-- require("plugins.toggleterm")
 
 -- load format options
 require("format")

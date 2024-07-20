@@ -228,7 +228,7 @@ local plugins = {
 		end,
 	},
 	{ "Mofiqul/dracula.nvim" },
-	{ "akinsho/toggleterm.nvim", version = "*" },
+	-- { "akinsho/toggleterm.nvim", version = "*" },
 	{ "sainnhe/gruvbox-material" },
 	{ "sainnhe/sonokai" },
 	{ "sainnhe/everforest" },
