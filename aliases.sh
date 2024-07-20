@@ -31,6 +31,13 @@ function newsess {
     tmux new -s $1 -d
 }
 
+function sql-spad {
+    mkdir -p /tmp/sqlpad
+    touch /tmp/sqlpad/$(date +%s).sql
+    nvim /tmp/sqlpad/$(date +%s).sql
+}
+
+
 # aliases 
 alias bat='bat -p'
 alias ls='eza'
