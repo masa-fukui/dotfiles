@@ -17,6 +17,8 @@
   # environment.
   home.packages = [
     pkgs.gitleaks
+    pkgs.awscli2
+    pkgs.terraform
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -51,6 +53,7 @@
   #  /etc/profiles/per-user/bongo/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
+    NIXPKGS_ALLOW_UNFREE = 1;
     EDITOR = "nvim";
   };
 
