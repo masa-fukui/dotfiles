@@ -53,6 +53,8 @@ alias elt="eza --tree --level=3 --long --icons --git"
 alias oupdate="git add . && git commit -m 'update $(date)' && git push"
 alias fd="fdfind"
 
+unalias zi
+
 # functions
 function take() {
     mkdir -p $1
