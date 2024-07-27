@@ -67,6 +67,9 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey '^[OA' history-beginning-search-backward
 bindkey '^[OB' history-beginning-search-forward
 
+# Ctrl+E to edit the command line
+bindkey '^E' edit-command-line
+
 ############################################
 # - Initialization & Plugins
 ############################################
