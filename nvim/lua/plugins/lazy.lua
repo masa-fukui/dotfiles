@@ -263,6 +263,14 @@ local plugins = {
             })
         end
     },
+    {
+        "EdenEast/nightfox.nvim",
+        config = function()
+            require('nightfox').setup({
+                transparent = true,
+            })
+        end
+    } -- lazy
 }
 
 local opts = {
