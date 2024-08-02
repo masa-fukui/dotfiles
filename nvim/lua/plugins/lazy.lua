@@ -255,6 +255,14 @@ local plugins = {
         },
     },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    {
+        "AlexvZyl/nordic.nvim",
+        config = function()
+            require('nordic').setup({
+                transparent_bg = true,
+            })
+        end
+    },
 }
 
 local opts = {
