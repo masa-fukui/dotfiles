@@ -231,7 +231,18 @@ local plugins = {
 	-- { "akinsho/toggleterm.nvim", version = "*" },
 	{ "sainnhe/gruvbox-material" },
 	{ "sainnhe/sonokai" },
-	{ "sainnhe/everforest" },
+    {
+        "neanias/everforest-nvim",
+        version = false,
+        lazy = false,
+        priority = 1000, -- make sure to load this before all the other start plugins
+        config = function()
+            require("everforest").setup({
+                background = "hard",
+                transparent_background_level = 2,
+            })
+        end,
+    },
 	{ "sainnhe/edge" },
 	{ "sainnhe/forest-night" },
 	{
@@ -263,14 +274,6 @@ local plugins = {
             })
         end
     },
-    {
-        "EdenEast/nightfox.nvim",
-        config = function()
-            require('nightfox').setup({
-                transparent = true,
-            })
-        end
-    } -- lazy
 }
 
 local opts = {
