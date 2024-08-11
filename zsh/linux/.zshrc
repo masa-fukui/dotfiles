@@ -1,3 +1,7 @@
+
+if [ -f $HOME/.env.sh ]; then
+    . $HOME/.env.sh
+fi
 ############################################
 # - Zinit
 ############################################
@@ -38,6 +42,7 @@ export PATH=$PATH:/usr/local/go/bin
 # export GOPATH=$GOROOT/src
 # export GOBIN=$GOROOT/bin
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/.local/bin
 
 ############################################
 # - Alias & Keybind

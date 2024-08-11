@@ -1,5 +1,6 @@
 -- theme swticher
 local workenv = os.getenv("WORK_ENV")
+local hostname = os.getenv("HOSTNAME")
 
 if workenv == "work" then
 	vim.cmd("colorscheme nordic")
@@ -9,6 +10,10 @@ elseif workenv == "linux-pop" then
 	vim.cmd("colorscheme dracula-soft")
 else
 	vim.cmd("colorscheme tokyonight-night")
+end
+
+if hostname == "pop-os" then
+    vim.cmd("colorscheme monokai-pro")
 end
 
 -- terraform indent settings
