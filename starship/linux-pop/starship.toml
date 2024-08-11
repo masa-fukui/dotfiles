@@ -1,33 +1,27 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-
 format = """
 [](color_bg1)\
 $os\
 $username\
-[](bg:color_purple fg:color_bg1)\
+[](bg:color_pop_dark_gray fg:color_bg1)\
 $directory\
-[](fg:color_purple bg:color_mauve)\
+[](fg:color_pop_dark_gray bg:color_pop_orange)\
 $git_branch\
 $git_status\
-[](fg:color_mauve bg:color_gray)\
-$c\
+[](fg:color_pop_orange bg:color_gray)\
 $rust\
 $golang\
-$nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
 $python\
 $nix_shell\
-[](fg:color_gray)\
-$line_break$character"""
+[](fg:color_gray bg:#1d2230)\
+\n$character"""
 
 palette = 'custom'
 
 [palettes.custom]
 color_fg0 = '#fbf1c7'
-color_bg1 = '#3c3836'
+color_fg1 = '#000000'
+color_bg1 = '#308f9c'
 color_bg3 = '#665c54'
 color_blue = '#458588'
 color_aqua = '#689d6a'
@@ -37,6 +31,8 @@ color_mauve = '#6272A4'
 color_red = '#cc241d'
 color_yellow = '#d79921'
 color_gray = '#44475a'
+color_pop_dark_gray = '#564E4A'
+color_pop_orange = '#FA9C05'
 
 [os]
 disabled = false
@@ -62,7 +58,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-Pop=" "
+Pop=""
 
 [username]
 show_always = true
@@ -71,19 +67,19 @@ style_root = "bg:color_bg1 fg:color_fg0"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_fg0 bg:color_purple"
+style = "fg:color_fg0 bg:color_pop_dark_gray"
 format = "[ $path ]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_mauve"
-format = '[[ $symbol $branch ](fg:color_fg0 bg:color_mauve)]($style)'
+style = "bg:color_pop_orange"
+format = '[[ $symbol $branch ](fg:color_fg1 bg:color_pop_orange)]($style)'
 
 [git_status]
-style = "bg:color_mauve"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_mauve)]($style)'
+style = "bg:color_pop_orange"
+format = '[[($all_status$ahead_behind )](fg:color_fg1 bg:color_pop_orange)]($style)'
 
 [nodejs]
 symbol = ""
