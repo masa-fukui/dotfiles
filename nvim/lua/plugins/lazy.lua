@@ -165,25 +165,25 @@ local plugins = {
 		},
 	},
 	{ "ThePrimeagen/git-worktree.nvim" },
-	-- {
-	-- 	"epwalsh/obsidian.nvim",
-	-- 	version = "*", -- recommended, use latest release instead of latest commit
-	-- 	lazy = true,
-	-- 	ft = "markdown",
-	-- 	-- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
-	-- 	-- event = {
-	-- 	--   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
-	-- 	--   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
-	-- 	--   "BufReadPre path/to/my-vault/**.md",
-	-- 	--   "BufNewFile path/to/my-vault/**.md",
-	-- 	-- },
-	-- 	dependencies = {
-	-- 		-- Required.
-	-- 		"nvim-lua/plenary.nvim",
-	--
-	-- 		-- see below for full list of optional dependencies 👇
-	-- 	},
-	-- },
+	{
+		"epwalsh/obsidian.nvim",
+		version = "*", -- recommended, use latest release instead of latest commit
+		lazy = true,
+		ft = "markdown",
+		-- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
+		-- event = {
+		--   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+		--   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
+		--   "BufReadPre path/to/my-vault/**.md",
+		--   "BufNewFile path/to/my-vault/**.md",
+		-- },
+		dependencies = {
+			-- Required.
+			"nvim-lua/plenary.nvim",
+
+			-- see below for full list of optional dependencies 👇
+		},
+	},
 	{
 		"folke/trouble.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -245,24 +245,7 @@ local plugins = {
 		},
 		lazy = false,
 	},
-    {
-        "OXY2DEV/markview.nvim",
-        dependencies = {
-            -- You may not need this if you don't lazy load
-            -- Or if the parsers are in your $RUNTIMEPATH
-            "nvim-treesitter/nvim-treesitter",
-            "nvim-tree/nvim-web-devicons"
-        },
-    },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-    {
-        "AlexvZyl/nordic.nvim",
-        config = function()
-            require('nordic').setup({
-                transparent_bg = true,
-            })
-        end
-    },
     {
       "loctvl842/monokai-pro.nvim",
       config = function()
