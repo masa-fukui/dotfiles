@@ -29,6 +29,10 @@ vim.keymap.set("n", "<C-Right>", "<cmd>TmuxNavigateRight<CR>", { desc = "TmuxNav
 vim.keymap.set("n", "<C-Up>", "<cmd>TmuxNavigateUp<CR>", { desc = "TmuxNavigateUp" })
 vim.keymap.set("n", "<C-Down>", "<cmd>TmuxNavigateDown<CR>", { desc = "TmuxNavigateDown" })
 
--- copilot enable / disable
-vim.keymap.set("n", "<leader>ce", "<cmd>Copilot enable<CR>", { desc = "Enable copilot" })
-vim.keymap.set("n", "<leader>cd", "<cmd>Copilot disable<CR>", { desc = "Disable copilot" })
+-- copilot & codeium enable / disable
+vim.keymap.set("n", "<leader>gce", "<cmd>Copilot enable<CR>", { desc = "Enable copilot" })
+vim.keymap.set("n", "<leader>gcd", "<cmd>Copilot disable<CR>", { desc = "Disable copilot" })
+vim.keymap.set("n", "<leader>coe", "<cmd>Codeium Enable<CR>", { desc = "Enable codeium" })
+vim.keymap.set("n", "<leader>cod", "<cmd>Codeium Disable<CR>", { desc = "Disable codeium" })
+
+-- codeium chat

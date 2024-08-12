@@ -189,14 +189,14 @@ local plugins = {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {},
 	},
-	-- {
-	-- 	"folke/which-key.nvim",
-	-- 	event = "VeryLazy",
-	-- 	opts = {
-	--        },
-	--  keys = {
-	--        },
-	-- },
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		opts = {
+	       },
+	 keys = {
+	       },
+	},
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
@@ -253,13 +253,16 @@ local plugins = {
                 transparent_background = true,
             })
       end
+    },
+    {
+      'Exafunction/codeium.vim',
+      event = 'BufEnter',
+        config = function ()
+            vim.keymap.set('i', '<C-]>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+        end
     }
 }
 
-local opts = {
-	-- defaults = {
-	--     lazy = true,
-	-- },
-}
+local opts = {}
 
 require("lazy").setup(plugins, opts)
