@@ -13,7 +13,7 @@ else
 end
 
 if hostname == "pop-os" then
-    vim.cmd("colorscheme monokai-pro")
+	vim.cmd("colorscheme monokai-pro")
 end
 
 -- terraform indent settings
@@ -37,10 +37,10 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- set commentstring for sql
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "sql",
-    callback = function()
-        vim.opt_local.commentstring = "-- %s"
-    end,
+	pattern = "sql",
+	callback = function()
+		vim.opt_local.commentstring = "-- %s"
+	end,
 })
 
 -- line number colors

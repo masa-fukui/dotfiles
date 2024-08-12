@@ -192,10 +192,8 @@ local plugins = {
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
-		opts = {
-	       },
-	 keys = {
-	       },
+		opts = {},
+		keys = {},
 	},
 	{
 		"folke/todo-comments.nvim",
@@ -245,22 +243,24 @@ local plugins = {
 		},
 		lazy = false,
 	},
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-    {
-      "loctvl842/monokai-pro.nvim",
-      config = function()
-        require("monokai-pro").setup({
-                transparent_background = true,
-            })
-      end
-    },
-    {
-      'Exafunction/codeium.vim',
-      event = 'BufEnter',
-        config = function ()
-            vim.keymap.set('i', '<C-]>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
-        end
-    }
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{
+		"loctvl842/monokai-pro.nvim",
+		config = function()
+			require("monokai-pro").setup({
+				transparent_background = true,
+			})
+		end,
+	},
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+		config = function()
+			vim.keymap.set("i", "<C-]>", function()
+				return vim.fn["codeium#CycleCompletions"](1)
+			end, { expr = true, silent = true })
+		end,
+	},
 }
 
 local opts = {}

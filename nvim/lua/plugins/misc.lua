@@ -17,7 +17,12 @@ vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
 
 -- trouble
 vim.keymap.set("n", "<leader>xx", "<Cmd>Trouble diagnostics toggle<CR>", { desc = "Toggle trouble" })
-vim.keymap.set("n", "<leader>xb", "<Cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Toggle trouble (Current Buffer)" })
+vim.keymap.set(
+	"n",
+	"<leader>xb",
+	"<Cmd>Trouble diagnostics toggle filter.buf=0<CR>",
+	{ desc = "Toggle trouble (Current Buffer)" }
+)
 
 -- kanagawa
 require("kanagawa").setup({

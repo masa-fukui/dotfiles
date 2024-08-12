@@ -2,18 +2,18 @@ local workenv = os.getenv("WORK_ENV")
 local options
 
 if workenv == "work" then
-    options = {
-        theme = "nordic"
-    }
+	options = {
+		theme = "nordic",
+	}
 else
-    options = {
-        theme = "auto"
-    }
+	options = {
+		theme = "auto",
+	}
 end
 
 require("lualine").setup({
-    options = options,
-    sections = {
+	options = options,
+	sections = {
 		lualine_c = {
 			{
 				"filename",
