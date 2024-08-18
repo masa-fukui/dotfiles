@@ -22,7 +22,8 @@ require("lualine").setup({
           {
             'mode',
             fmt = function(str)
-              return ' ' .. str
+              -- return ' ' .. str
+              return ' ' .. str
             end,
             color = { gui = 'bold' }
           },
