@@ -13,7 +13,7 @@ else
 end
 
 if hostname == "pop-os" then
-	vim.cmd("colorscheme monokai-pro")
+	vim.cmd("colorscheme tokyonight-night")
 end
 
 -- terraform indent settings

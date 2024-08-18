@@ -1,7 +1,8 @@
 live_config_reload = true
 
 import = [
-    "~/.config/alacritty/themes/monokai.toml",
+    # "~/.config/alacritty/themes/monokai.toml",
+    "~/.config/alacritty/themes/tokyo-night.toml",
 ]
 
 [env]
