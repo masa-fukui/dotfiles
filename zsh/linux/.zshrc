@@ -50,7 +50,7 @@ export PATH=$PATH:$HOME/.local/bin
 # alias
 alias c='clear'
 alias v='nvim'
-alias sf='screenfetch'
+alias ff='screenfetch'
 alias ls='eza'
 alias bat='batcat'
 alias el="eza -l --icons --git -a"
