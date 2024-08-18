@@ -1,9 +1,11 @@
 live_config_reload = true
 
 import = [
-    # "~/.config/alacritty/themes/monokai.toml",
     "~/.config/alacritty/themes/tokyo-night.toml",
 ]
+
+[colors.primary]
+foreground = "#c5c8c6"
 
 [env]
 TERM = "xterm-256color"
