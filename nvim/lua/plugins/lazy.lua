@@ -193,8 +193,8 @@ local plugins = {
 		"folke/which-key.nvim",
 		event = "VeryLazy",
 		opts = {
-            delay=1000,
-        },
+			delay = 1000,
+		},
 		keys = {},
 	},
 	{
