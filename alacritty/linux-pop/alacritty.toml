@@ -6,6 +6,7 @@ import = [
 
 [colors.primary]
 foreground = "#c5c8c6"
+background = "#1d2021"
 
 [env]
 TERM = "xterm-256color"
