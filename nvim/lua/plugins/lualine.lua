@@ -22,7 +22,7 @@ require("lualine").setup({
           {
             'mode',
             fmt = function(str)
-              return ' ' .. vim.fn['escape'](str, 'bold')
+              return ' ' .. str
             end,
             color = { gui = 'bold' }
           },
