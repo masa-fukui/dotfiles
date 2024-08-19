@@ -25,17 +25,22 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+local opts = {}
+local plugins = {}
+
 if work_env == "work" then
-    require("lazy").setup(
+    plugins = {
         require("plugins.common"),
         require("plugins.copilot")
-    )
+    }
 else
-    require("lazy").setup(
-        require("plugins.common"),
-        require("plugins.codeium")
-    )
+    plugins = {
+            require("plugins.common"),
+            require("plugins.codeium")
+    }
 end
+
+require("lazy").setup(plugins, opts)
 
 -- plugin configurations
 require("plugin_config.telescope")
