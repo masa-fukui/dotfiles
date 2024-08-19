@@ -1,22 +1,11 @@
 local workenv = os.getenv("WORK_ENV")
-local options
 
-if workenv == "work" then
-	options = {
-		theme = "nordic",
-        icons_enabled = true,
-        disabled_filetypes = { 'neo-tree'},
-	}
-else
+require("lualine").setup({
 	options = {
 		theme = "auto",
         icons_enabled = true,
         disabled_filetypes = { 'neo-tree'},
-	}
-end
-
-require("lualine").setup({
-	options = options,
+	},
 	sections = {
         lualine_a = {
           {
