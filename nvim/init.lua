@@ -54,6 +54,7 @@ require("plugin_config.harpoon")
 require("plugin_config.misc")
 require("plugin_config.lualine")
 require("plugin_config.rose-pine")
+require("plugin_config.diffview")
 -- require("plugin_config.toggleterm")
 
 -- load format options
