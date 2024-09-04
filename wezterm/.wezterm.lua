@@ -11,13 +11,13 @@ local config = {}
 -- general
 config.enable_tab_bar = false
 config.enable_scroll_bar = false
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 40
 
 -- appearance
 config.color_scheme = 'Catppuccin Mocha (Gogh)'
-config.color_scheme = 'nightfox'
-config.color_scheme = 'terafox'
+-- config.color_scheme = 'nightfox'
+-- config.color_scheme = 'terafox'
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="DemiBold"},
     {family="Twemoji Mozilla", assume_emoji_presentation = true},
