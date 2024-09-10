@@ -57,7 +57,7 @@ alias el="eza -l --icons --git -a"
 alias elt="eza --tree --level=3 --long --icons --git"
 alias oupdate="git add . && git commit -m 'update $(date)' && git push"
 alias fd="fdfind"
-
+alias code="code --enable-features=UseOzonePlatform --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto"
 unalias zi
 
 # functions
