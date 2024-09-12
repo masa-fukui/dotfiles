@@ -35,8 +35,8 @@ if work_env == "work" then
     }
 else
     plugins = {
-            require("plugins.common"),
-            require("plugins.codeium")
+        require("plugins.common"),
+        require("plugins.codeium")
     }
 end
 
