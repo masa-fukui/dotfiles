@@ -99,14 +99,6 @@ return {
 			"rcarriga/nvim-notify",
 		},
 	},
-	{
-		"startup-nvim/startup.nvim",
-		config = function()
-			require("startup").setup()
-		end,
-		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-	},
-
 	-- lsp
 	{ -- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
@@ -247,5 +239,36 @@ return {
 			})
 		end,
 	},
-    { "sindrets/diffview.nvim" }
+    { "sindrets/diffview.nvim" },
+    {
+        "goolord/alpha-nvim",
+        dependencies = {
+          "nvim-tree/nvim-web-devicons",
+        },
+
+        config = function()
+            local alpha = require("alpha")
+            local dashboard = require("alpha.themes.dashboard")
+
+          dashboard.section.header.val = {
+            [[                                                                       ]],
+            [[                                                                       ]],
+            [[                                                                       ]],
+            [[                                                                       ]],
+            [[                                                                     ]],
+            [[       ████ ██████           █████      ██                     ]],
+            [[      ███████████             █████                             ]],
+            [[      █████████ ███████████████████ ███   ███████████   ]],
+            [[     █████████  ███    █████████████ █████ ██████████████   ]],
+            [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+            [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+            [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+            [[                                                                       ]],
+            [[                                                                       ]],
+            [[                                                                       ]],
+          }
+
+          alpha.setup(dashboard.opts)
+        end,
+    }
 }
