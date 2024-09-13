@@ -16,6 +16,7 @@ require("mason-lspconfig").setup({
 		"terraformls",
 		"tflint",
 		"jsonls",
+        "dockerls",
 	},
 })
 require("lspconfig").rust_analyzer.setup({})
@@ -39,6 +40,7 @@ require("lspconfig").pyright.setup({})
 require("lspconfig").terraformls.setup({})
 require("lspconfig").tflint.setup({})
 require("lspconfig").jsonls.setup({})
+require("lspconfig").dockerls.setup({})
 
 require("lspconfig").lua_ls.setup({
 	settings = {
