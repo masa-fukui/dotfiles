@@ -21,7 +21,8 @@ palette = 'custom'
 [palettes.custom]
 color_fg0 = '#fbf1c7'
 color_fg1 = '#000000'
-color_bg1 = '#308f9c'
+# color_bg1 = '#308f9c' # pop-os blue
+color_bg1 = '#8E55D3'
 color_bg3 = '#665c54'
 color_blue = '#458588'
 color_aqua = '#689d6a'
