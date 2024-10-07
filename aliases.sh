@@ -51,6 +51,7 @@ alias gcommit='~/dotfiles/scripts/gum/better_commit.sh'
 alias gswitch='~/dotfiles/scripts/gum/better_switch.sh'
 
 alias c=clear
+alias t=tmux
 
 alias wrename='tmux rename-window'
 alias ktl=kubectl
