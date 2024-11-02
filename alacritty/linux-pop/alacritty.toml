@@ -1,7 +1,8 @@
 live_config_reload = true
 
 import = [
-    "~/.config/alacritty/themes/tokyo-night.toml",
+    # "~/.config/alacritty/themes/tokyo-night.toml",
+    "~/.config/alacritty/themes/ashes_dark.toml",
 ]
 
 [colors.primary]
