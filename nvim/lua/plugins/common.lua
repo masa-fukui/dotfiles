@@ -239,6 +239,7 @@ return {
 			})
 		end,
 	},
+    { 'LhKipp/nvim-nu', config = function() require('nu').setup() end },
     { "sindrets/diffview.nvim" },
     {
         "goolord/alpha-nvim",
