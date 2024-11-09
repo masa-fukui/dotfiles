@@ -5,10 +5,10 @@ $os\
 $username\
 [](bg:color_pop_dark_gray fg:color_bg1)\
 $directory\
-[](fg:color_pop_dark_gray bg:color_pop_orange)\
+[](fg:color_pop_dark_gray bg:color_pop_green)\
 $git_branch\
 $git_status\
-[](fg:color_pop_orange bg:color_gray)\
+[](fg:color_pop_green bg:color_gray)\
 $rust\
 $golang\
 $python\
@@ -22,11 +22,13 @@ palette = 'custom'
 color_fg0 = '#fbf1c7'
 color_fg1 = '#000000'
 # color_bg1 = '#308f9c' # pop-os blue
-color_bg1 = '#7352C4'
+# color_bg1 = '#7352C4' # purple
+color_bg1 = '#328C75' # green
 color_bg3 = '#665c54'
 color_blue = '#458588'
 color_aqua = '#689d6a'
 color_orange = '#d65d0e'
+color_pop_green = '#38CFA5'
 color_purple = '#8058ac'
 color_mauve = '#6272A4'
 color_red = '#cc241d'
@@ -75,12 +77,12 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_pop_orange"
-format = '[[ $symbol $branch ](fg:color_fg1 bg:color_pop_orange)]($style)'
+style = "bg:color_pop_green"
+format = '[[ $symbol $branch ](fg:color_fg1 bg:color_pop_green)]($style)'
 
 [git_status]
-style = "bg:color_pop_orange"
-format = '[[($all_status$ahead_behind )](fg:color_fg1 bg:color_pop_orange)]($style)'
+style = "bg:color_pop_green"
+format = '[[($all_status$ahead_behind )](fg:color_fg1 bg:color_pop_green)]($style)'
 
 [nodejs]
 symbol = ""
