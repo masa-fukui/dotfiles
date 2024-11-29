@@ -67,4 +67,3 @@ alias vi=nvim
 alias v=nvim
 
 alias gcl="gcloud"
-alias ya="yazi"
