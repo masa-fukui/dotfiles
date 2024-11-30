@@ -1,6 +1,6 @@
-live_config_reload = true
+general.live_config_reload = true
 
-import = [
+general.import = [
     # "~/.config/alacritty/rose-pine.toml",
     "~/.config/alacritty/tokyonight.toml",
     # "~/.config/alacritty/rose-pine-moon.toml",
