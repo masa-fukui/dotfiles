@@ -16,8 +16,8 @@ require("mason-lspconfig").setup({
 		"terraformls",
 		"tflint",
 		"jsonls",
-        "dockerls",
-        "yamlls",
+		"dockerls",
+		"yamlls",
 	},
 })
 require("lspconfig").rust_analyzer.setup({})

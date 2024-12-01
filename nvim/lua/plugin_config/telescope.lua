@@ -1,26 +1,26 @@
 require("telescope").setup({
-    defaults = {
-        file_ignore_patterns = { ".git/", "node_modules/", "vendor/", ".cache/" },
-    },
-    extensions = {
-        fzf = {
-            fuzzy = true,                   -- false will only do exact matching
-            override_generic_sorter = true, -- override the generic sorter
-            override_file_sorter = true,    -- override the file sorter
-            case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
-        },
-    },
-    pickers = {
-        find_files = {
-            hidden = true,
-        },
-        grep_string = {
-            additional_args = { "--hidden" },
-        },
-        live_grep = {
-            additional_args = { "--hidden" },
-        },
-    },
+	defaults = {
+		file_ignore_patterns = { ".git/", "node_modules/", "vendor/", ".cache/" },
+	},
+	extensions = {
+		fzf = {
+			fuzzy = true, -- false will only do exact matching
+			override_generic_sorter = true, -- override the generic sorter
+			override_file_sorter = true, -- override the file sorter
+			case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+		},
+	},
+	pickers = {
+		find_files = {
+			hidden = true,
+		},
+		grep_string = {
+			additional_args = { "--hidden" },
+		},
+		live_grep = {
+			additional_args = { "--hidden" },
+		},
+	},
 })
 
 require("telescope").load_extension("git_worktree")
@@ -41,10 +41,10 @@ vim.keymap.set("n", "<leader>fm", require("telescope.builtin").marks, { desc = "
 vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files, { desc = "[Git] [F]iles" })
 vim.keymap.set("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "[G]it [S]tatus" })
 vim.keymap.set(
-    "n",
-    "<Leader>gw",
-    "<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>",
-    { desc = "[G]it [W]orktree" }
+	"n",
+	"<Leader>gw",
+	"<CMD>lua require('telescope').extensions.git_worktree.git_worktrees()<CR>",
+	{ desc = "[G]it [W]orktree" }
 )
 
 vim.keymap.set("n", "<leader>fj", require("telescope.builtin").jumplist, { desc = "[F]ind [J]umplist" })

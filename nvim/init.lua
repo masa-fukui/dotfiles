@@ -22,22 +22,21 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 
-
 vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 local plugins = {}
 
 if work_env == "work" then
-    plugins = {
-        require("plugins.common"),
-        require("plugins.copilot")
-    }
+	plugins = {
+		require("plugins.common"),
+		require("plugins.copilot"),
+	}
 else
-    plugins = {
-        require("plugins.common"),
-        require("plugins.codeium")
-    }
+	plugins = {
+		require("plugins.common"),
+		require("plugins.codeium"),
+	}
 end
 
 require("lazy").setup(plugins, opts)

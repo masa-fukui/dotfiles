@@ -205,18 +205,18 @@ return {
 	-- { "akinsho/toggleterm.nvim", version = "*" },
 	{ "sainnhe/gruvbox-material" },
 	{ "sainnhe/sonokai" },
-    {
-        "neanias/everforest-nvim",
-        version = false,
-        lazy = false,
-        priority = 1000, -- make sure to load this before all the other start plugins
-        config = function()
-            require("everforest").setup({
-                background = "hard",
-                transparent_background_level = 2,
-            })
-        end,
-    },
+	{
+		"neanias/everforest-nvim",
+		version = false,
+		lazy = false,
+		priority = 1000, -- make sure to load this before all the other start plugins
+		config = function()
+			require("everforest").setup({
+				background = "hard",
+				transparent_background_level = 2,
+			})
+		end,
+	},
 	{ "sainnhe/edge" },
 	{ "sainnhe/forest-night" },
 	{
@@ -239,71 +239,83 @@ return {
 			})
 		end,
 	},
-    { 'LhKipp/nvim-nu', config = function() require('nu').setup() end },
-    { "sindrets/diffview.nvim" },
-    {
-        "goolord/alpha-nvim",
-        dependencies = {
-          "nvim-tree/nvim-web-devicons",
-        },
+	{
+		"LhKipp/nvim-nu",
+		config = function()
+			require("nu").setup()
+		end,
+	},
+	{ "sindrets/diffview.nvim" },
+	{
+		"goolord/alpha-nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
 
-        config = function()
-            local alpha = require("alpha")
-            local dashboard = require("alpha.themes.dashboard")
+		config = function()
+			local alpha = require("alpha")
+			local dashboard = require("alpha.themes.dashboard")
 
-          dashboard.section.header.val = {
-            [[                                                                       ]],
-            [[                                                                       ]],
-            [[                                                                       ]],
-            [[                                                                       ]],
-            [[                                                                     ]],
-            [[       ████ ██████           █████      ██                     ]],
-            [[      ███████████             █████                             ]],
-            [[      █████████ ███████████████████ ███   ███████████   ]],
-            [[     █████████  ███    █████████████ █████ ██████████████   ]],
-            [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
-            [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
-            [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
-            [[                                                                       ]],
-            [[                                                                       ]],
-            [[                                                                       ]],
-          }
+			dashboard.section.header.val = {
+				[[                                                                       ]],
+				[[                                                                       ]],
+				[[                                                                       ]],
+				[[                                                                       ]],
+				[[                                                                     ]],
+				[[       ████ ██████           █████      ██                     ]],
+				[[      ███████████             █████                             ]],
+				[[      █████████ ███████████████████ ███   ███████████   ]],
+				[[     █████████  ███    █████████████ █████ ██████████████   ]],
+				[[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+				[[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+				[[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+				[[                                                                       ]],
+				[[                                                                       ]],
+				[[                                                                       ]],
+			}
 
-          alpha.setup(dashboard.opts)
-        end,
-    },
-    ---@type LazySpec
-    {
-      "mikavilpas/yazi.nvim",
-      event = "VeryLazy",
-      keys = {
-        -- 👇 in this section, choose your own keymappings!
-        {
-          "<leader>-",
-          "<cmd>Yazi<cr>",
-          desc = "Open yazi at the current file",
-        },
-        {
-          -- Open in the current working directory
-          "<leader>cw",
-          "<cmd>Yazi cwd<cr>",
-          desc = "Open the file manager in nvim's working directory" ,
-        },
-        {
-          -- NOTE: this requires a version of yazi that includes
-          -- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
-          '<c-up>',
-          "<cmd>Yazi toggle<cr>",
-          desc = "Resume the last yazi session",
-        },
-      },
-      ---@type YaziConfig
-      opts = {
-        -- if you want to open yazi instead of netrw, see below for more info
-        open_for_directories = false,
-        keymaps = {
-          show_help = '<f1>',
-        },
-      },
-    }
+			alpha.setup(dashboard.opts)
+		end,
+	},
+	---@type LazySpec
+	{
+		"mikavilpas/yazi.nvim",
+		event = "VeryLazy",
+		keys = {
+			-- 👇 in this section, choose your own keymappings!
+			{
+				"<leader>-",
+				"<cmd>Yazi<cr>",
+				desc = "Open yazi at the current file",
+			},
+			{
+				-- Open in the current working directory
+				"<leader>cw",
+				"<cmd>Yazi cwd<cr>",
+				desc = "Open the file manager in nvim's working directory",
+			},
+			{
+				-- NOTE: this requires a version of yazi that includes
+				-- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
+				"<c-up>",
+				"<cmd>Yazi toggle<cr>",
+				desc = "Resume the last yazi session",
+			},
+		},
+		---@type YaziConfig
+		opts = {
+			-- if you want to open yazi instead of netrw, see below for more info
+			open_for_directories = false,
+			keymaps = {
+				show_help = "<f1>",
+			},
+		},
+	},
+	{
+		"echasnovski/mini.files",
+		config = function()
+			require("mini.files").setup()
+		end,
+		version = false,
+	},
 }
