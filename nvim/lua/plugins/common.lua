@@ -240,6 +240,7 @@ return {
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
+    },
     { 'LhKipp/nvim-nu', config = function() require('nu').setup() end },
     { "sindrets/diffview.nvim" },
     { "mellow-theme/mellow.nvim" },
