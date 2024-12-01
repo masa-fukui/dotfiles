@@ -18,7 +18,8 @@ config.max_fps = 120
 -- appearance
 -- config.color_scheme = 'Catppuccin  (Gogh)'
 -- config.color_scheme = "nightfox"
-config.color_scheme = 'Gruvbox Dark (Gogh)'
+-- config.color_scheme = 'Gruvbox Dark (Gogh)'
+config.color_scheme = 'Monokai Dark (Gogh)'
 
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="DemiBold"},

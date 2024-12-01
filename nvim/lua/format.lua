@@ -3,8 +3,7 @@ local workenv = os.getenv("WORK_ENV")
 local hostname = os.getenv("HOSTNAME")
 
 if workenv == "work" then
-    vim.g.gruvbox_material_transparent_background = 1
-	vim.cmd("colorscheme gruvbox-material")
+	vim.cmd("colorscheme monokai-pro")
 elseif workenv == "linux" then
 	vim.cmd("colorscheme tokyonight-night")
 else
