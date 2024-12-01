@@ -22,7 +22,7 @@ config.color_scheme = 'Monokai Dark (Gogh)'
 config.color_scheme = 'Catppuccin Mocha (Gogh)'
 
 config.font = wezterm.font_with_fallback({
-    {family="JetBrainsMono Nerd Font", weight="DemiBold"},
+    {family="JetBrainsMono Nerd Font", weight="Bold"},
     {family="Twemoji Mozilla", assume_emoji_presentation = true},
 })
 config.font_size = 13
