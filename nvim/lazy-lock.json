@@ -30,6 +30,7 @@
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "mellow.nvim": { "branch": "main", "commit": "434a02d5f7637a24824569426176f37473205053" },
   "mini.files": { "branch": "main", "commit": "6abe854f1410fc6aec69897a78b1db994c32d9c6" },
+  "monokai-nightasty.nvim": { "branch": "main", "commit": "526672a531b7f55f6bc8cb9fb4d6eddc151c69f1" },
   "monokai-pro.nvim": { "branch": "master", "commit": "2bad2a92fe0ff6c8581d33a853a1b17592b83239" },
   "noice.nvim": { "branch": "main", "commit": "90844cfdf8c1d2edcb2e56c21e2724e7c6ea4c41" },
   "none-ls.nvim": { "branch": "main", "commit": "2870f66b1cb263f6e0bfffdb089739b874343a3a" },
