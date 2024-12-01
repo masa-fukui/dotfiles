@@ -219,17 +219,6 @@ return {
 	},
 	{ "sainnhe/edge" },
 	{ "sainnhe/forest-night" },
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		},
-		lazy = false,
-	},
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"loctvl842/monokai-pro.nvim",
@@ -314,7 +303,27 @@ return {
 	{
 		"echasnovski/mini.files",
 		config = function()
-			require("mini.files").setup()
+			require("mini.files").setup({
+                mappings = {
+                    close       = 'q',
+                    go_in       = 'l',
+                    go_in_plus  = '<ENTER>', -- originally 'L'
+                    go_out      = 'h',
+                    go_out_plus = 'H',
+                    mark_goto   = "'",
+                    mark_set    = 'm',
+                    reset       = '<BS>',
+                    reveal_cwd  = '@',
+                    show_help   = 'g?',
+                    synchronize = 'w',
+                    trim_left   = '<',
+                    trim_right  = '>',
+                },
+                -- General options
+                options = {
+                  use_as_default_explorer = true,
+                },
+            })
 		end,
 		version = false,
 	},
