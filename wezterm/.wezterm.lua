@@ -16,8 +16,8 @@ config.macos_window_background_blur = 40
 config.max_fps = 120
 
 -- appearance
-config.color_scheme = "nightfox"
--- config.color_scheme = 'Gruvbox Dark (Gogh)'
+-- config.color_scheme = "nightfox"
+config.color_scheme = 'Gruvbox Dark (Gogh)'
 -- config.color_scheme = 'Monokai Dark (Gogh)'
 -- config.color_scheme = 'Catppuccin Mocha (Gogh)'
 
