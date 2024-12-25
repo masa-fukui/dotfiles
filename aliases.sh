@@ -45,6 +45,7 @@ alias ll='eza -l'
 alias el="eza -l --icons --git -a"
 alias elt="eza --tree --level=3 --long --icons --git"
 alias cdr='cd $(git rev-parse --show-toplevel)'
+alias cm='chezmoi'
 
 alias y='yazi'
 
