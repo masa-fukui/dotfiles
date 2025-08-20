@@ -23,12 +23,12 @@ palette = 'custom'
 color_fg0 = '#fbf1c7'
 color_fg1 = '#000000'
 color_fg2 = '#FFFFFF'
-color_bg1 = '#328C75' # green
+color_bg1 = '#b4befe' # purple
 color_bg3 = '#665c54'
 color_blue = '#458588'
 color_aqua = '#689d6a'
 color_orange = '#d65d0e'
-color_pop_green = '#38CFA5'
+color_pop_green = '#cba6f7'
 color_purple = '#8058ac'
 color_mauve = '#6272A4'
 color_red = '#cc241d'
@@ -39,7 +39,7 @@ color_pop_orange = '#FA9C05'
 
 [os]
 disabled = false
-style = "bg:color_bg1 fg:color_fg2"
+style = "bg:color_bg1 fg:color_fg1"
 
 [os.symbols]
 Windows = "󰍲"
