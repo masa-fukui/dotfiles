@@ -51,3 +51,4 @@ unfocused-split-opacity = 0.98
 # # white
 # palette = 7=#c7ccd1
 # palette = 15=#f3f4f5
+keybind = shift+enter=text:\n
