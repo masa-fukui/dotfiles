@@ -2,6 +2,7 @@
 format = """
 [](color_bg1)\
 $os\
+[ ](bg:color_bg1 fg:color_bg1)\
 [](bg:color_pop_dark_gray fg:color_bg1)\
 $directory\
 [](fg:color_pop_dark_gray bg:color_pop_green)\
