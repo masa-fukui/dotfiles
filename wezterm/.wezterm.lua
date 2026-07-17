@@ -16,10 +16,7 @@ config.macos_window_background_blur = 40
 config.max_fps = 120
 
 -- appearance
--- config.color_scheme = "nightfox"
 config.color_scheme = 'Gruvbox Dark (Gogh)'
--- config.color_scheme = 'Monokai Dark (Gogh)'
--- config.color_scheme = 'Catppuccin Mocha (Gogh)'
 
 config.font = wezterm.font_with_fallback({
     {family="JetBrainsMono Nerd Font", weight="Bold"},
@@ -32,23 +29,6 @@ config.colors = {
 }
 
 
--- custom scheme
--- local scheme = wezterm.color.get_builtin_schemes()['rose-pine']
--- scheme.ansi = {
---     "#26233a","#eb6f92","#9ccfd8","#f6c177","#3eb1b4","#c4a7e7","#ebbcba","#e0def4"
--- }
--- scheme.brights = {
---     "#6e6a86","#eb6f92","#9ccfd8","#f6c177","#3eb1b4","#c4a7e7","#ebbcba","#e0def4"
--- }
---
--- scheme.selection_bg = "#ffffff"
--- scheme.selection_fg = "#ffffff"
---
--- config.color_schemes = {
---     ['rose-pine'] = scheme,
--- }
--- config.color_scheme = 'rose-pine'
-
 -- keys
 local act = wezterm.action
 config.keys = {
@@ -60,5 +40,4 @@ config.keys = {
 }
 
 return config
-
 

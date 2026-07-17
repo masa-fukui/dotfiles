@@ -1,7 +1,7 @@
 background-opacity = 0.95
 background-blur-radius = 20
 unfocused-split-opacity = 0.95
-theme = "TokyoNight Night"
+theme = "Monokai Pro"
 macos-titlebar-style = "hidden"
 adjust-cursor-height = -20%
 
@@ -14,5 +14,5 @@ background-opacity = 0.98
 background-blur-radius = 20
 unfocused-split-opacity = 0.98
 
-background = #1e1e2e
+# background = #1e1e2e
 keybind = shift+enter=text:\n

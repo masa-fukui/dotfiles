@@ -4,10 +4,10 @@ format = """
 [  ](bg:#a3aed2 fg:#090c0c)\
 [](bg:color_pop_dark_gray fg:#a3aed2)\
 $directory\
-[](fg:color_pop_dark_gray bg:#769ff0)\
+[](fg:color_pop_dark_gray bg:#a3d97c)\
 $git_branch\
 $git_status\
-[](fg:#769ff0 bg:color_gray)\
+[](fg:#a3d97c bg:color_gray)\
 $rust\
 $golang\
 $python\
@@ -64,7 +64,7 @@ RedHatEnterprise = "󱄛"
 Pop=""
 
 [username]
-show_always = true
+
 style_user = "bg:color_bg1 fg:color_fg2"
 style_root = "bg:color_bg1 fg:color_fg2"
 format = '[ $user ]($style)'
@@ -77,12 +77,13 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#769ff0"
-format = '[[ $symbol $branch ](fg:color_fg1 bg:#769ff0)]($style)'
+style = "bg:#a3d97c"
+format = '[[ $symbol $branch ](fg:color_fg1 bg:#a3d97c)]($style)'
 
 [git_status]
-style = "bg:#769ff0"
-format = '[[($all_status$ahead_behind )](fg:color_fg1 bg:#769ff0)]($style)'
+# style = "bg:#769ff0"
+style = "bg:#a3d97c"
+format = '[[($all_status$ahead_behind )](fg:color_fg1 bg:#a3d97c)]($style)'
 
 [nodejs]
 symbol = ""
