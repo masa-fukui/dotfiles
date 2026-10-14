@@ -157,3 +157,4 @@ disabled = false
 style = 'bold yellow bg:color_pop_dark_gray'
 symbol = '  '
 format = '[$symbol($profile )(\[$duration\] )]($style)'
+force_display = true

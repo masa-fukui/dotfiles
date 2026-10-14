@@ -5,7 +5,11 @@ theme = "Monokai Pro"
 macos-titlebar-style = "hidden"
 adjust-cursor-height = -20%
 
-font-style = Bold
+
+scrollback-limit = 100000000
+
+font-family = "JetBrains Mono Nerd Font"
+# font-style = SemiBold
 font-size = 13
 font-thicken = true
 
